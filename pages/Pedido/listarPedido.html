@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Cuatro Soles</title>
+  
+  
+  <link rel="stylesheet" href="../../vendors/feather/feather.css">  
+  <link rel="stylesheet" href="../../vendors/ti-icons/css/themify-icons.css">
+  <link rel="stylesheet" href="../../vendors/typicons/typicons.css">
+  <link rel="stylesheet" href="../../vendors/simple-line-icons/css/simple-line-icons.css">
+  <link rel="stylesheet" href="../../vendors/mdi/css/materialdesignicons.min.css">  
+  <link rel="stylesheet" href="../../vendors/css/vendor.bundle.base.css">
+  <link rel="stylesheet" href="../../css/vertical-layout-light/style.css">
+  <link rel="shortcut icon" href="../../images/favicon.png" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha384-ezF3lHYoUGYpJw/M+/rWJ8UH0gSqK+yxrPC3gQC2q3lqYgN6r3PMj0Et9bPPLGiS" crossorigin="anonymous">
+  
+</head>
+
+<body>
+  <div class="container-scroller">
+    
+    <nav class="navbar default-layout col-lg-12 col-12 p-0 fixed-top d-flex align-items-top flex-row">
+      <div class="text-center navbar-brand-wrapper d-flex align-items-center justify-content-start">
+        <div class="me-3">
+          <button class="navbar-toggler navbar-toggler align-self-center" type="button" data-bs-toggle="minimize">
+            <span class="icon-menu"></span>
+          </button>
+        </div>
+        <div>
+          <a class="navbar-brand brand-logo" href="#">
+            <h3>Cuatro soles</h3>
+            <!-- <img src="../../images/logo.svg" alt="logo" /> -->
+          </a>
+          <a class="navbar-brand brand-logo-mini" href="#">
+            <img src="../../images/logo-mini.svg" alt="logo" />
+          </a>
+        </div>
+      </div>
+      <div class="navbar-menu-wrapper d-flex align-items-top"> 
+        <ul class="navbar-nav">
+          <li class="nav-item font-weight-semibold d-none d-lg-block ms-0">
+            <h1 class="welcome-text"><span class="text-black fw-bold">Pedidos</span></h1>
+            <h3 class="welcome-sub-text">Tabla de registros</h3>
+          </li>
+        </ul>
+        <ul class="navbar-nav ms-auto">          
+          <li class="nav-item dropdown d-none d-lg-block user-dropdown">
+            <a class="nav-link" id="UserDropdown" href="#" data-bs-toggle="dropdown" aria-expanded="false">
+              <img class="img-xs rounded-circle" src="../../images/faces/face8.jpg" alt="Profile image"> </a>
+            <div class="dropdown-menu dropdown-menu-right navbar-dropdown" aria-labelledby="UserDropdown">
+              <div class="dropdown-header text-center">
+                <img class="img-md rounded-circle" src="../../images/faces/face8.jpg" alt="Profile image">
+                <p class="mb-1 mt-3 font-weight-semibold">Allen Moreno</p>
+                <p class="fw-light text-muted mb-0">allenmoreno@gmail.com</p>
+              </div>
+              <a class="dropdown-item"><i class="dropdown-item-icon mdi mdi-account-outline text-primary me-2"></i> Mi Perfil<span class="badge badge-pill badge-danger">1</span></a>             
+              <a class="dropdown-item"><i class="dropdown-item-icon mdi mdi-power text-primary me-2"></i>Salir</a>
+            </div>
+          </li>
+        </ul>
+        <button class="navbar-toggler navbar-toggler-right d-lg-none align-self-center" type="button" data-bs-toggle="offcanvas">
+          <span class="mdi mdi-menu"></span>
+        </button>
+      </div>  
+    </nav>
+    
+    <div class="container-fluid page-body-wrapper">      
+      <nav class="sidebar sidebar-offcanvas" id="sidebar">
+        <ul class="nav">
+          <li class="nav-item">
+            <a class="nav-link" href="../dashboard/chartjs.html" aria-expanded="false" aria-controls="dashboard">
+              <i class="menu-icon mdi mdi-chart-bar"></i>
+              <span class="menu-title">Dashboard</span>
+            </a>
+          </li>
+        
+          <li class="nav-item">
+            <a class="nav-link" href="../usuario/listarUsuario.html" aria-expanded="false" aria-controls="usuarios">
+              <i class="menu-icon mdi mdi-account-tie"></i>
+              <span class="menu-title">Usuarios</span>
+            </a>
+          </li>
+        
+          <li class="nav-item">
+            <a class="nav-link" data-bs-toggle="collapse" href="#compras" aria-expanded="false" aria-controls="compras">
+              <i class="menu-icon mdi mdi-cart"></i>
+              <span class="menu-title">Compras</span>
+              <i class="menu-arrow"></i>
+            </a>
+            <div class="collapse" id="compras">
+              <ul class="nav flex-column sub-menu">
+                <li class="nav-item"><a class="nav-link" href="../proveedor/listarProveedor.html">Proveedores</a></li>
+                <li class="nav-item"><a class="nav-link" href="../insumos/Insumo.html">Insumos</a></li>
+                <li class="nav-item"><a class="nav-link" href="../compra/listarCompra.html">Compras</a></li>
+                <li class="nav-item"><a class="nav-link" href="../abonos/Abonos.html">Abonos</a></li>
+              </ul>
+            </div>
+          </li>
+        
+          <li class="nav-item">
+            <a class="nav-link" data-bs-toggle="collapse" href="#produccion" aria-expanded="false" aria-controls="produccion">
+              <i class="menu-icon mdi mdi-chart-line"></i>
+              <span class="menu-title">Producción</span>
+              <i class="menu-arrow"></i>
+            </a>
+            <div class="collapse" id="produccion">
+              <ul class="nav flex-column sub-menu">
+                <li class="nav-item"><a class="nav-link" href="../empleado/listarEmpleado.html">Empleados</a></li>
+                <li class="nav-item"><a class="nav-link" href="../main/main.html">Producción</a></li>
+                <li class="nav-item"><a class="nav-link" href="../rendimiento/rendimiento.html">Rendimiento</a></li>
+                <li class="nav-item"><a class="nav-link" href="../jornadaLaboral/jornadaLaboral.html">Jornada Laboral</a></li>
+                <li class="nav-item"><a class="nav-link" href="../regProduccion/regProduccion.html">Reg. Producción</a></li>
+              </ul>
+            </div>
+          </li>
+        
+          <li class="nav-item">
+            <a class="nav-link" data-bs-toggle="collapse" href="#ventas" aria-expanded="false" aria-controls="ventas">
+              <i class="menu-icon mdi mdi-cash-register"></i>
+              <span class="menu-title">Ventas</span>
+              <i class="menu-arrow"></i>
+            </a>
+            <div class="collapse show" id="ventas">
+              <ul class="nav flex-column sub-menu active">
+                <li class="nav-item"><a class="nav-link" href="../cliente/listarCliente.html">Clientes</a></li>
+                <li class="nav-item active"><a class="nav-link" href="#">Pedidos</a></li>
+                <li class="nav-item"><a class="nav-link" href="../venta/listarVenta.html">Ventas</a></li>
+                <!--<li class="nav-item"><a class="nav-link" href="">Abonos</a></li>-->
+              </ul>
+            </div>
+          </li>
+        </ul>
+                
+      </nav>
+            
+      <div class="main-panel">
+        <div class="content-wrapper">
+          <div class="row">
+            <!-- Sidebar Tasks-->
+            <div class="col-sm-12">
+                <div class="home-tab">
+                  <div class="tab-content tab-content-basic">
+                    <div class="d-sm-flex align-items-center justify-content-between border-bottom">
+                      <ul class="nav nav-tabs" role="tablist">
+                        <li class="nav-item">
+                          <form class="search-form" action="#">
+                            <i class="icon-search"></i>
+                            <input type="search" class="form-control" placeholder="Buscar" title="Search here">                            
+                          </form>
+                        </li>                       
+                      </ul>
+                      
+                      <div>
+                        <a href="#" onclick="descargarExcel()" class="btn btn-success" style="background-color: #058143; color:aliceblue"><span class="mdi mdi-file-excel"></span>Excel</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+
+            <div class="col-lg-12 grid-margin stretch-card">
+              <div class="card">
+                <div class="card-body">
+                  <div class="d-sm-flex align-items-center justify-content-between border-bottom">
+                    <div>
+                      <h2 class="card-title">Pedidos en producción</h2>                  
+                      <p class="card-description">Registros</p>
+                    </div>                    
+                  <a type="button" href="crearPedido.html" class="btn btn-success" style="background-color:rgb(235, 232, 232); color:black">
+                    <i class="mdi mdi-plus-box"></i> Agregar Nuevo Pedido
+                  </a>
+                  </div>
+                  
+                  <div class="table-responsive">
+                    <table class="table table-hover ">
+                      <thead>
+                        <tr>
+                          <th>Cliente</th>
+                          <th>Orden De Trabajo</th>
+                          <th>Fecha Orden</th>
+                          <th>Fecha Entrega Orden</th>
+                          <th>Referencia</th>
+                          <th>Forma De Pago</th>
+                          <th>Valor A Pagar</th>
+                          <th>Estado</th>
+                          <th></th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td>Monastery S.AS</td>
+                          <td>1548596</td>
+                          <td>01-06-2023</td>
+                          <td>30-06-2023</td>
+                          <td>154215 - 154216</td>
+                          <td>Credito</td>
+                          <td>4.500.000,00</td>
+                          <td>Terminado</td>
+                          <td>
+                            <button class="btn btn-secondary" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal"><i class="mdi mdi-file-document" style="color: black;"></i></button>
+                            <a href="crearPedido.html" type="button" class="btn btn-primary" style="background-color:rgb(163, 186, 201); " ><i class="mdi mdi-pencil" style="color: black;"></i></a>
+                            <button class="btn tbn-danger" type="button" onclick="cancelarPedido()" style="background-color: rgb(238, 216, 216);"><i class="mdi mdi-cancel" style="color: red;" ></i></button>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>Mattelsa S.A.S</td>
+                          <td>142859</td>
+                          <td>15-06-2023</td>
+                          <td>15-07-2023</td>
+                          <td>236512</td>
+                          <td>Contado</td>
+                          <td>5.500.000,00</td>
+                          <td>En Producción</td>
+                          <td>
+                            <button class="btn btn-secondary" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal"><i class="mdi mdi-file-document" style="color: black;"></i></button>
+                            <a href="crearPedido.html" type="button" class="btn btn-primary" style="background-color:rgb(163, 186, 201); " ><i class="mdi mdi-pencil" style="color: black;"></i></a>
+                            <button class="btn tbn-danger" type="button" onclick="cancelarPedido()" style="background-color: rgb(238, 216, 216);"><i class="mdi mdi-cancel" style="color: red;" ></i></button>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>Tulum S.A</td>
+                          <td>26359</td>
+                          <td>27/06/2023</td>
+                          <td>01-08-2023</td>
+                          <td>115236</td>
+                          <td>Contado</td>
+                          <td>3.800.000,00</td>
+                          <td>Ingresado</td>
+                          <td>
+                            <button class="btn btn-secondary" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal"><i class="mdi mdi-file-document" style="color: black;"></i></button>
+                            <a href="crearPedido.html" type="button" class="btn btn-primary" style="background-color:rgb(163, 186, 201); " ><i class="mdi mdi-pencil" style="color: black;"></i></a>
+                            <button class="btn tbn-danger" type="button" onclick="cancelarPedido()" style="background-color: rgb(238, 216, 216);"><i class="mdi mdi-cancel" style="color: red;" ></i></button>
+                          </td>
+                        </tr>                        
+                      </tbody>
+                    </table>                    
+                  </div>
+                </div>
+              </div>
+            </div>
+
+                   <!-- Modal Formulario Ver detalle -->
+          <div class="modal " id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true" style="top: -15%;" >
+            <div class="modal-dialog ">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h1 class="modal-title fs-5" id="exampleModalLabel">Detalles del pedido</h1>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">    
+                    <div class="row">
+                      <div class="col-sm-4">
+                        <strong>Cliente:</strong>
+                        <p>Monasyery S.A.S</p>
+                      </div>
+                      <div class="col-sm-4">
+                        <strong>Contacto:</strong>
+                        <p>Juan Pablo</p>
+                      </div>  
+                      <div class="col-sm-4">
+                        <strong>Orden de Trabajo</strong>
+                        <p>1548596</p>
+                      </div>  
+                    </div>        
+                    
+                    
+                    <div class="row">                      
+                      <div class="col-sm-4">
+                        <strong>Fecha de Compra</strong>
+                        <p>01/06/2023</p>
+                      </div>
+                      <div class="col-sm-4">
+                        <strong>Fecha de registro</strong>
+                        <p>05/06/2023</p>
+                      </div>
+                      <div class="col-sm-4">
+                        <strong>Fecha de compromiso</strong>
+                        <p>30/06/2023</p>
+                      </div>
+                    </div>                                                                        
+                                                            
+                    <div class="table-responsive">
+                      <table  class="table table-horver">
+                        <thead>
+                          <tr>
+                            <th>Referencia</th>
+                            <th>Descripción</th>
+                            <th>Procesos</th>
+                            <th>Valor Unitario</th>
+                            <th>Cantitad Total</th>
+                            <th>Valor Total</th>                          
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>154286</td>
+                            <td>Tangas</td>
+                            <td>Recubridora - Fileteadora - Presilladora</td>
+                            <td>1.500,00</td>
+                            <td>3000</td>
+                            <td>4.500.000,00</td>                            
+                          </tr>
+                          <tr><table class="table table-horver">
+                            <thead class="thead-light">
+                              <tr>
+                                <th>Color/Talla</th>
+                                <th>S</th>
+                                <th>M</th>
+                                <th>L</th>
+                                <th>XL</th>
+                                <th>Cantitad Total</th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <tr>
+                                <td>Blanco</td>
+                                <td>250</td>
+                                <td>250</td>
+                                <td>250</td>
+                                <td>250</td>
+                                <td>1000</td>
+                              </tr>
+                              <tr>
+                                <td>Negro</td>
+                                <td>250</td>
+                                <td>250</td>
+                                <td>250</td>
+                                <td>250</td>
+                                <td>1000</td>
+                              </tr>
+                              <tr>
+                                <td>Grisa</td>
+                                <td>250</td>
+                                <td>250</td>
+                                <td>250</td>
+                                <td>250</td>
+                                <td>1000</td>
+                              </tr>
+                              <tr>
+                                <td><strong>Total</strong></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td>3000</td>
+                              </tr>
+                            </tbody>
+                          </table>}</tr>
+                        </tbody>                 
+                      </table><br>                                          
+                    </div>
+                    <div class="row">
+                      <div class="col-sm-6">
+                        <strong>Forma de Pago</strong>
+                        <p>Credito</p>
+                      </div>
+                      <div class="col-sm-6">                        
+                        <strong>Total Neto:</strong>4.500.000,00
+                      </div>
+                    </div> 
+                  <div class="card-body">                    
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Regresar</button>                      
+                    </div>          
+                </div>
+          
+                </div>
+                
+              </div>
+            </div>
+          </div>
+
+
+
+            <footer class="footer">
+                <div class="d-sm-flex justify-content-center justify-content-sm-between">
+                  <span class="float-none float-sm-right d-block mt-1 mt-sm-0 text-center">Copyright © 2023-2024 CuatroSoles. Todos los derechos reservados.</span>  
+                </div>
+            </footer>
+        
+          </div>      
+        </div>
+      </div>  
+    </div>
+  </div>   
+    
+  <script src="https://unpkg.com/xlsx/dist/xlsx.full.min.js"></script>
+  <script src="../../js/pedido/listarPedido.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+  <script src="../../vendors/js/vendor.bundle.base.js"></script>
+  <script src="../../vendors/bootstrap-datepicker/bootstrap-datepicker.min.js"></script>
+  <script src="../../js/off-canvas.js"></script>
+  <script src="../../js/hoverable-collapse.js"></script>
+  <script src="../../js/template.js"></script>
+  <script src="../../js/settings.js"></script>
+  <script src="../../js/todolist.js"></script>
+
+</body>
+</html>

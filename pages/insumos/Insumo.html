@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Cuatro Soles</title>
+  
+  
+  <link rel="stylesheet" href="../../vendors/feather/feather.css">  
+  <link rel="stylesheet" href="../../vendors/ti-icons/css/themify-icons.css">
+  <link rel="stylesheet" href="../../vendors/typicons/typicons.css">
+  <link rel="stylesheet" href="../../vendors/simple-line-icons/css/simple-line-icons.css">
+  <link rel="stylesheet" href="../../vendors/mdi/css/materialdesignicons.min.css">  
+  <link rel="stylesheet" href="../../vendors/css/vendor.bundle.base.css">
+  <link rel="stylesheet" href="../../css/vertical-layout-light/style.css">
+  <link rel="shortcut icon" href="../../images/favicon.png" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha384-ezF3lHYoUGYpJw/M+/rWJ8UH0gSqK+yxrPC3gQC2q3lqYgN6r3PMj0Et9bPPLGiS" crossorigin="anonymous">
+  
+</head>
+
+<body>
+  <div class="container-scroller">
+    
+    <nav class="navbar default-layout col-lg-12 col-12 p-0 fixed-top d-flex align-items-top flex-row">
+      <div class="text-center navbar-brand-wrapper d-flex align-items-center justify-content-start">
+        <div class="me-3">
+          <button class="navbar-toggler navbar-toggler align-self-center" type="button" data-bs-toggle="minimize">
+            <span class="icon-menu"></span>
+          </button>
+        </div>
+        <div>
+          <a class="navbar-brand brand-logo" href="#">
+            <h3>Cuatro soles</h3>
+            <!-- <img src="../../images/logo.svg" alt="logo" /> -->
+          </a>
+          <a class="navbar-brand brand-logo-mini" href="#">
+            <img src="../../images/logo-mini.svg" alt="logo" />
+          </a>
+        </div>
+      </div>
+      <div class="navbar-menu-wrapper d-flex align-items-top"> 
+        <ul class="navbar-nav">
+          <li class="nav-item font-weight-semibold d-none d-lg-block ms-0">
+            <h1 class="welcome-text"><span class="text-black fw-bold">Insumos</span></h1>
+            <h3 class="welcome-sub-text">Tabla de registros</h3>
+          </li>
+        </ul>
+        <ul class="navbar-nav ms-auto">          
+          <li class="nav-item dropdown d-none d-lg-block user-dropdown">
+            <a class="nav-link" id="UserDropdown" href="#" data-bs-toggle="dropdown" aria-expanded="false">
+              <img class="img-xs rounded-circle" src="../../images/faces/face8.jpg" alt="Profile image"> </a>
+            <div class="dropdown-menu dropdown-menu-right navbar-dropdown" aria-labelledby="UserDropdown">
+              <div class="dropdown-header text-center">
+                <img class="img-md rounded-circle" src="../../images/faces/face8.jpg" alt="Profile image">
+                <p class="mb-1 mt-3 font-weight-semibold">Allen Moreno</p>
+                <p class="fw-light text-muted mb-0">allenmoreno@gmail.com</p>
+              </div>
+              <a class="dropdown-item"><i class="dropdown-item-icon mdi mdi-account-outline text-primary me-2"></i> Mi Perfil<span class="badge badge-pill badge-danger">1</span></a>             
+              <a class="dropdown-item"><i class="dropdown-item-icon mdi mdi-power text-primary me-2"></i>Salir</a>
+            </div>
+          </li>
+        </ul>
+        <button class="navbar-toggler navbar-toggler-right d-lg-none align-self-center" type="button" data-bs-toggle="offcanvas">
+          <span class="mdi mdi-menu"></span>
+        </button>
+      </div>  
+    </nav>
+    
+    <div class="container-fluid page-body-wrapper">      
+      <nav class="sidebar sidebar-offcanvas" id="sidebar">
+        <ul class="nav">
+          <li class="nav-item">
+            <a class="nav-link" href="../dashboard/chartjs.html" aria-expanded="false" aria-controls="dashboard">
+              <i class="menu-icon mdi mdi-chart-bar"></i>
+              <span class="menu-title">Dashboard</span>
+            </a>
+          </li>
+        
+          <li class="nav-item">
+            <a class="nav-link"  href="../usuario/listarUsuario.html" aria-expanded="false" aria-controls="usuarios">
+              <i class="menu-icon mdi mdi-account-tie"></i>
+              <span class="menu-title">Usuarios</span>
+            </a>
+          </li>
+        
+          <li class="nav-item">
+            <a class="nav-link" data-bs-toggle="collapse" href="#compras" aria-expanded="false" aria-controls="compras">
+              <i class="menu-icon mdi mdi-cart"></i>
+              <span class="menu-title">Compras</span>
+              <i class="menu-arrow"></i>
+            </a>
+            <div class="collapse show" id="compras">
+              <ul class="nav flex-column sub-menu active">
+                <li class="nav-item"><a class="nav-link" href="../proveedor/listarProveedor.html">Proveedores</a></li>
+                <li class="nav-item"><a class="nav-link" href="../insumos/Insumo.html">Insumos</a></li>
+                <li class="nav-item active"><a class="nav-link" href="../compra/listarCompra.html">Compras</a></li>
+                <li class="nav-item"><a class="nav-link" href="../abonos/Abonos.html">Abonos</a></li>
+              </ul>
+            </div>
+          </li>
+        
+          <li class="nav-item">
+            <a class="nav-link" data-bs-toggle="collapse" href="#produccion" aria-expanded="false" aria-controls="produccion">
+              <i class="menu-icon mdi mdi-chart-line"></i>
+              <span class="menu-title">Producción</span>
+              <i class="menu-arrow"></i>
+            </a>
+            <div class="collapse" id="produccion">
+              <ul class="nav flex-column sub-menu">
+                <li class="nav-item"><a class="nav-link" href="../empleado/listarEmpleado.html">Empleados</a></li>
+                <li class="nav-item"><a class="nav-link" href="../main/main.html">Producción</a></li>
+                <li class="nav-item"><a class="nav-link" href="../rendimiento/rendimiento.html">Rendimiento</a></li>
+                <li class="nav-item"><a class="nav-link" href="../jornadaLaboral/jornadaLaboral.html">Jornada Laboral</a></li>
+                <li class="nav-item"><a class="nav-link" href="../main/main.html">Reg. Producción</a></li>
+              </ul>
+            </div>
+          </li>
+        
+          <li class="nav-item">
+            <a class="nav-link" data-bs-toggle="collapse" href="#ventas" aria-expanded="false" aria-controls="ventas">
+              <i class="menu-icon mdi mdi-cash-register"></i>
+              <span class="menu-title">Ventas</span>
+              <i class="menu-arrow"></i>
+            </a>
+            <div class="collapse " id="ventas">
+              <ul class="nav flex-column sub-menu ">
+                <li class="nav-item"><a class="nav-link" href="../cliente/listarCliente.html">Clientes</a></li>
+                <li class="nav-item "><a class="nav-link" href="../Pedido/listarPedido.html">Pedidos</a></li>
+                <li class="nav-item"><a class="nav-link" href="../venta/listarVenta.html">Ventas</a></li>
+                <!--<li class="nav-item"><a class="nav-link" href="">Abonos</a></li>-->
+              </ul>
+            </div>
+          </li>
+        </ul>
+                
+      </nav>
+      <!-- partial -->
+      <div class="main-panel">
+        <div class="content-wrapper">
+          <div class="row">
+            <div class="col-sm-12">
+                <div class="home-tab">
+                  <div class="tab-content tab-content-basic">
+                    <div class="d-sm-flex align-items-center justify-content-between border-bottom">
+
+                      <ul class="nav nav-tabs" role="tablist">
+                        <li class="nav-item">
+                          <a class="nav-link active ps-0" id="home-tab" data-bs-toggle="tab" href="#overview" role="tab" aria-controls="overview" aria-selected="true">Insumos</a>
+                      </ul>
+                      
+                      <div>
+                        <div class="btn-wrapper">
+                          <!-- <a href="#" class="btn btn-otline-dark align-items-center"><i class="icon-share"></i> Share</a> -->
+                          <a download="Insumos" href="insumos.xlsx" class="btn btn-primary text-white me-0"><i class="icon-download"></i> Exportar</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>           
+            <!-- Table Main -->
+            <div class="col-lg-12 grid-margin stretch-card">
+              <div class="card">
+                <div class="card-body">
+                  <div class="d-sm-flex align-items-center justify-content-between border-bottom">
+                    <div>
+                      <h2 class="card-title">Insumos</h2>                  
+                      <p class="card-description">Registros</p>
+                    </div>                    
+                  <button type="button" class="btn btn-success" style="background-color:rgb(235, 232, 232); color:black" data-bs-toggle="modal" data-bs-target="#ModalAdd">
+                    <i class="mdi mdi-account-plus"></i> Agregar Nuevo Insumo
+                  </button>
+                  </div>
+                  <div class="table-responsive">
+                    <table class="table table-hover">
+                      <thead>
+                        <tr>
+                          <th>Id</th>
+                          <th>Insumo</th>
+                          <th>Categoria</th>
+                          <th>Stop</th>
+                          <th>Estado</th>
+                          <th> </th>
+                          <th>Acción</th>
+                        </tr>
+                        <tr>
+                          <th>01</th>
+                          <th>Hilos</th>
+                          <th>Gasto de administración</th>
+                          <th>15</th>
+                          <th>Activo</th>
+                          <td>
+                            <i class="mdi mdi-toggle-switch-off toggle-icon green"></i>
+                          </td>
+                          
+                          <td><a type="button" class="btn btn-primary" onclick="editarRegistro(this)"
+                            style="background-color:rgb(163, 186, 201); " data-bs-toggle="modal"
+                            data-bs-target="#ModalEdit">
+                            <i class="mdi mdi-account-edit" style="color: black;"></i>
+                          </a></td>
+              
+                        </tr>
+                      </thead>
+                    </table>
+                  </div>
+                </div>
+              </div>
+            </div>
+<div class="modal fade" id="ModalEdit" tabindex="-1" aria-labelledby="ModalLabelEdit" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-scrollable">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="ModalLabelEdit">Editar insumo</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <div class="col-md-12 grid-margin stretch-card">
+          <div class="card">
+            <div class="card-body">
+              <h4 class="card-title">Editar</h4>
+              <p class="card-description">
+                insumo de compra
+              </p>
+              <div class="form-group">
+                <label for="cliente">Insumo</label>
+                <input type="text" class="form-control" value="papel" name="Papel" id="insumoEdit" placeholder="Insumo">
+                <div id="msgInsumoEdit"></div>
+              </div>
+              <div class="form-group">
+                <label for="cliente">Stop</label>
+                <input type="number" name="15" value="15" class="form-control">
+                <div id="msgInsumoEdit"></div>
+              </div>
+              <div class="form-group">
+                <label for="estado">Categoria</label>
+                <select class="form-control" value="Gasto de administración" id="categoriaEdit">
+                  <option value="Gasto de venta">Gasto de venta</option>
+                  <option value="Gasto de administración">Gasto de administración</option>
+                </select>
+                <div id="msgCategoriaEdit"></div>
+              </div>
+              <div class="modal-footer">
+                <button id="btnActualizar" type="button" class="btn btn-primary" >Guardar</button>
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                
+              </div>
+            </div>
+          </div>
+        </div>  
+      </div>
+      <div class="modal-footer">
+        <p>Insumo: <span id="insumoDisplay"></span></p>
+        <p>Categoría: <span id="categoriaDisplay"></span></p>
+      </div>
+    </div>
+  </div>
+</div>
+<script>
+  document.getElementById("btnActualizar").addEventListener("click", function() {
+    var insumoEdit = document.getElementById("insumoEdit").value;
+    var categoriaEdit = document.getElementById("categoriaEdit").value;
+
+    var msgInsumoEdit = document.getElementById("msgInsumoEdit");
+    var msgCategoriaEdit = document.getElementById("msgCategoriaEdit");
+
+    var valid = true;
+
+    msgInsumoEdit.innerHTML = "";
+    msgCategoriaEdit.innerHTML = "";
+
+    if (insumoEdit.trim() === "") {
+      msgInsumoEdit.innerHTML = "El campo Insumo es requerido.";
+      valid = false;
+    } else if (!/^[a-zA-Z]+$/.test(insumoEdit)) {
+      msgInsumoEdit.innerHTML = "El campo Insumo solo debe contener letras.";
+      valid = false;
+    }
+
+    if (categoriaEdit === "") {
+      msgCategoriaEdit.innerHTML = "Debe seleccionar una categoría.";
+      valid = false;
+    }
+
+    if (valid) {
+      var insumoDisplay = document.getElementById("insumoDisplay");
+      var categoriaDisplay = document.getElementById("categoriaDisplay");
+
+      insumoDisplay.textContent = insumoEdit;
+      categoriaDisplay.textContent = categoriaEdit;
+
+      var modal = document.getElementById("ModalEdit");
+      var modalInstance = bootstrap.Modal.getInstance(modal);
+      modalInstance.hide();
+    }
+  });
+</script>
+<form class="forms-sample" onsubmit="return validarFormulario()">
+  <!-- Resto del código del formulario -->
+</form>
+<div class="modal fade" id="ModalAdd" tabindex="-1" aria-labelledby="ModalLabelAdd" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-scrollable">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="ModalLabelEdit">Crear insumo</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <div class="col-md-12 grid-margin stretch-card">
+          <div class="card">
+            <div class="card-body">
+              <h4 class="card-title">Crear</h4>
+              <p class="card-description">
+                Insumo de compra
+              </p>
+              <form class="forms-sample">
+                <div class="form-group">
+                  <label>Insumo</label>
+                  <input type="text" class="form-control" id="insumo" placeholder="Insumo">
+                  <div id="msgInsumo" class="error-message"></div>
+                </div>
+                <div class="form-group">
+                  <label for="stop">Stop</label>
+                  <input type="number" class="form-control" id="stop">
+                  <div id="msgStop" class="error-message"></div>
+                </div>
+                <div class="form-group">
+                  <label for="categoria">Categoría</label>
+                  <select class="form-control" id="categoria">
+                    <option selected disabled>Seleccione una categoría</option>
+                    <option value="Gasto de venta">Gasto de venta</option>
+                    <option value="Gasto de administración">Gasto de administración</option>
+                  </select>
+                  <div id="msgCategoria" class="error-message"></div>
+                </div>
+                <div class="modal-footer">
+                  <button id="btnCrear" type="button" class="btn btn-primary me-2">Guardar</button>
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>  
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+document.getElementById("btnCrear").addEventListener("click", function() {
+  var insumo = document.getElementById("insumo").value;
+  var stop = document.getElementById("stop").value;
+  var categoria = document.getElementById("categoria").value;
+
+  var msgInsumo = document.getElementById("msgInsumo");
+  var msgStop = document.getElementById("msgStop");
+  var msgCategoria = document.getElementById("msgCategoria");
+
+  msgInsumo.textContent = "";
+  msgStop.textContent = "";
+  msgCategoria.textContent = "";
+
+  var valid = true;
+
+  if (insumo.trim() === "") {
+    msgInsumo.textContent = "El campo Insumo es requerido.";
+    msgInsumo.style.color = "red";
+    valid = false;
+  } else if (!/^[a-zA-Z]+$/.test(insumo)) {
+    msgInsumo.textContent = "El campo Insumo solo debe contener letras.";
+    msgInsumo.style.color = "red";
+    valid = false;
+  }
+
+  if (stop.trim() === "") {
+    msgStop.textContent = "El campo Stop es requerido.";
+    msgStop.style.color = "red";
+    valid = false;
+  }
+
+  if (categoria === null || categoria.trim() === "" || categoria === "Seleccione una categoría") {
+    msgCategoria.textContent = "Seleccione una categoría.";
+    msgCategoria.style.color = "red";
+    valid = false;
+  }
+
+  if (valid) {
+    var modal = document.getElementById("ModalAdd");
+    var modalInstance = bootstrap.Modal.getInstance(modal);
+    modalInstance.hide();
+  }
+});
+</script>         </div>
+        <footer class="footer">
+          <div class="d-sm-flex justify-content-center justify-content-sm-between">
+            <!-- <span class="text-muted text-center text-sm-left d-block d-sm-inline-block">Premium <a href="https://www.bootstrapdash.com/" target="_blank">Bootstrap admin template</a> from BootstrapDash.</span> -->
+            <span class="float-none float-sm-right d-block mt-1 mt-sm-0 text-center">Copyright © 2023-2024 CuatroSoles. Todos los derechos reservados.</span>          </div>
+        </footer>
+      </div>
+    </div>
+  </div>
+  </div>
+  <script src="../../vendors/js/vendor.bundle.base.js"></script>
+  <script src="../../vendors/bootstrap-datepicker/bootstrap-datepicker.min.js"></script>
+  <script src="../../js/off-canvas.js"></script>
+  <script src="../../js/hoverable-collapse.js"></script>
+  <script src="../../js/template.js"></script>
+  <script src="../../js/settings.js"></script>
+  <script src="../../js/todolist.js"></script>
+</body>
+</html>

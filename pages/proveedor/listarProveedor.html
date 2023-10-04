@@ -1,0 +1,544 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Cuatro Soles</title>
+
+  <link rel="stylesheet" href="../../vendors/feather/feather.css">
+  <link rel="stylesheet" href="../../vendors/mdi/css/materialdesignicons.min.css">
+  <link rel="stylesheet" href="../../vendors/ti-icons/css/themify-icons.css">
+  <link rel="stylesheet" href="../../vendors/typicons/typicons.css">
+  <link rel="stylesheet" href="../../vendors/simple-line-icons/css/simple-line-icons.css">
+  <link rel="stylesheet" href="../../vendors/css/vendor.bundle.base.css">
+  <link rel="stylesheet" href="../../css/vertical-layout-light/style.css">
+  <link rel="shortcut icon" href="../../images/favicon.png" />
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-d6XO3qVfXWUfjUJvEnxynJqVpiMhy57o0t2c5Pyci0j8r6LfXwHx89jRYfRhL4xK6JSmERGd+nxyfFtVWMTkwQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+</head>
+
+<body>
+  <div class="container-scroller">
+
+    <nav class="navbar default-layout col-lg-12 col-12 p-0 fixed-top d-flex align-items-top flex-row">
+      <div class="text-center navbar-brand-wrapper d-flex align-items-center justify-content-start">
+        <div class="me-3">
+          <button class="navbar-toggler navbar-toggler align-self-center" type="button" data-bs-toggle="minimize">
+            <span class="icon-menu"></span>
+          </button>
+        </div>
+        <div>
+          <a class="navbar-brand brand-logo" href="#">
+            <h3>Cuatro soles</h3>
+            <!-- <img src="../../images/logo.svg" alt="logo" /> -->
+          </a>
+          <a class="navbar-brand brand-logo-mini" href="#">
+            <img src="../../images/logo-mini.svg" alt="logo" />
+          </a>
+        </div>
+      </div>
+      <div class="navbar-menu-wrapper d-flex align-items-top">
+        <ul class="navbar-nav">
+          <li class="nav-item font-weight-semibold d-none d-lg-block ms-0">
+            <h1 class="welcome-text"><span class="text-black fw-bold">Proveedores</span></h1>
+            <h3 class="welcome-sub-text">Tabla de registros</h3>
+          </li>
+        </ul>
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item dropdown d-none d-lg-block user-dropdown">
+            <a class="nav-link" id="UserDropdown" href="#" data-bs-toggle="dropdown" aria-expanded="false">
+              <img class="img-xs rounded-circle" src="../../images/faces/face8.jpg" alt="Profile image"> </a>
+            <div class="dropdown-menu dropdown-menu-right navbar-dropdown" aria-labelledby="UserDropdown">
+              <div class="dropdown-header text-center">
+                <img class="img-md rounded-circle" src="../../images/faces/face8.jpg" alt="Profile image">
+                <p class="mb-1 mt-3 font-weight-semibold">Allen Moreno</p>
+                <p class="fw-light text-muted mb-0">allenmoreno@gmail.com</p>
+              </div>
+              <a class="dropdown-item"><i class="dropdown-item-icon mdi mdi-account-outline text-primary me-2"></i> Mi
+                Perfil<span class="badge badge-pill badge-danger">1</span></a>
+              <a class="dropdown-item"><i class="dropdown-item-icon mdi mdi-power text-primary me-2"></i>Salir</a>
+            </div>
+          </li>
+        </ul>
+        <button class="navbar-toggler navbar-toggler-right d-lg-none align-self-center" type="button"
+          data-bs-toggle="offcanvas">
+          <span class="mdi mdi-menu"></span>
+        </button>
+      </div>
+    </nav>
+
+    <div class="container-fluid page-body-wrapper">
+      <nav class="sidebar sidebar-offcanvas" id="sidebar">
+        <ul class="nav">
+          <li class="nav-item">
+            <a class="nav-link" href="../dashboard/chartjs.html" aria-expanded="false"
+              aria-controls="dashboard">
+              <i class="menu-icon mdi mdi-chart-bar"></i>
+              <span class="menu-title">Dashboard</span>
+            </a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="../usuario/listarUsuario.html" aria-expanded="false"
+              aria-controls="usuarios">
+              <i class="menu-icon mdi mdi-account-tie"></i>
+              <span class="menu-title">Usuarios</span>
+            </a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" data-bs-toggle="collapse" href="#compras" aria-expanded="false" aria-controls="compras">
+              <i class="menu-icon mdi mdi-cart"></i>
+              <span class="menu-title">Compras</span>
+              <i class="menu-arrow"></i>
+            </a>
+            <div class="collapse show" id="compras">
+              <ul class="nav flex-column sub-menu active">
+                <li class="nav-item active"><a class="nav-link" href="#">Proveedores</a></li>
+                <li class="nav-item"><a class="nav-link" href="../insumos/Insumo.html">Insumos</a></li>
+                <li class="nav-item"><a class="nav-link" href="../compra/listarCompra.html">Compras</a></li>
+                <li class="nav-item"><a class="nav-link" href="../abonos/Abonos.html">Abonos</a></li>
+              </ul>
+            </div>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" data-bs-toggle="collapse" href="#produccion" aria-expanded="false"
+              aria-controls="produccion">
+              <i class="menu-icon mdi mdi-chart-line"></i>
+              <span class="menu-title">Producción</span>
+              <i class="menu-arrow"></i>
+            </a>
+            <div class="collapse " id="produccion">
+              <ul class="nav flex-column sub-menu ">
+                <li class="nav-item "><a class="nav-link" href="../empleado/listarEmpleado.html">Empleados</a></li>
+                <li class="nav-item"><a class="nav-link" href="../main/main.html">Producción</a></li>
+                <li class="nav-item"><a class="nav-link" href="../rendimiento/rendimiento.html">Rendimiento</a></li>
+                <li class="nav-item"><a class="nav-link" href="../jornadaLaboral/jornadaLaboral.html">Jornada Laboral</a></li>
+                <li class="nav-item"><a class="nav-link" href="../regProduccion/regProduccion.html">Reg. Producción</a></li>
+              </ul>
+            </div>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" data-bs-toggle="collapse" href="#ventas" aria-expanded="false" aria-controls="ventas">
+              <i class="menu-icon mdi mdi-cash-register"></i>
+              <span class="menu-title">Ventas</span>
+              <i class="menu-arrow"></i>
+            </a>
+            <div class="collapse" id="ventas">
+              <ul class="nav flex-column sub-menu">
+                <li class="nav-item "><a class="nav-link" href="../cliente/listarCliente.html">Clientes</a></li>
+                <li class="nav-item "><a class="nav-link" href="../Pedido/listarPedido.html">Pedidos</a></li>
+                <li class="nav-item"><a class="nav-link" href="../venta/listarVenta.html">Ventas</a></li>
+                <!--<li class="nav-item"><a class="nav-link" href="">Abonos</a></li>-->
+              </ul>
+            </div>
+          </li>
+        </ul>
+
+      </nav>
+
+      <div class="main-panel">
+        <div class="content-wrapper">
+          <div class="row">
+            <div class="col-sm-12">
+              <div class="home-tab">
+                <div class="tab-content tab-content-basic">
+                  <div class="d-sm-flex align-items-center justify-content-between border-bottom">
+                    <ul class="nav nav-tabs" role="tablist">
+                      <li class="nav-item">
+                        <form class="search-form" action="#">
+                          <i class="mdi mdi-account-search"></i>
+                          <input type="search" class="form-control" placeholder="Buscar" title="Search here">
+                        </form>
+                      </li>
+                    </ul>
+                    <div>
+                    <a href="#" onclick="descargarExcel()" class="btn btn-success" style="background-color: #058143; color:aliceblue"><span class="mdi mdi-file-excel"></span>Excel</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-12 grid-margin stretch-card">
+              <div class="card">
+                <div class="card-body">
+                  <div class="d-sm-flex align-items-center justify-content-between border-bottom">
+                    <div>
+                      <h2 class="card-title">Proveedores</h2>
+                      <p class="card-description">Registros</p>
+                    </div>
+                    <button type="button" class="btn btn-success"
+                      style="background-color:rgb(235, 232, 232); color:black" data-bs-toggle="modal"
+                      data-bs-target="#exampleModal1">
+                      <i class="mdi mdi-account-plus"></i>  Agregar Nuevo Proveedor
+                    </button>
+                  </div>
+
+                  <div class="table-responsive">
+                    <table  class="table table-hover ">
+                      <thead>
+                        <tr>
+                          <th>Tipo de Proveedor</th>
+                          <th>Tipo de Identificación</th>
+                          <th>Numero de Identificación</th>
+                          <th>Razon Social</th>
+                          <th>Nombre Comercial</th>
+                          <th>Ciudad</th>
+                          <th>Dirección Principal</th>
+                          <th>Contacto</th>
+                          <th>Télefono</th>
+                          <th>Correo Electrónico</th>
+                          <th>Estado</th>
+                          <th></th>
+                          <th></th>
+                        </tr>
+                      </thead>
+                      <tbody >
+                        <tr>
+                          <td>Empresa</td>
+                          <td>NIT</td>
+                          <td>900.480.690-1</td>
+                          <td>Paracoser S.A.S</td>
+                          <td>Paracoser</td>
+                          <td>Medellín</td>
+                          <td>CR 15 42A 105</td>
+                          <td>Miguel Rios</td>
+                          <td>604 3021526</td>
+                          <td>ventas@paracoser.com</td>
+                          <td>Inactivo</td>
+                          <td>
+                            <i class="mdi mdi-toggle-switch-off toggle-icon" id="cliente-icon"></i>
+                          </td>
+                          <td>
+                            <a type="button" class="btn btn-primary" onclick="editarRegistro(this)"
+                              style="background-color:rgb(163, 186, 201); " data-bs-toggle="modal"
+                              data-bs-target="#exampleModal">
+                              <i class="mdi mdi-account-edit" style="color: black;"></i>
+                            </a>
+                        </td>
+                        </tr>
+                        <tr>
+                          <td>Empresa</td>
+                          <td>NIT</td>
+                          <td>890.905.185-7</td>
+                          <td>Cacharreria Bombay S.A</td>
+                          <td>Bombay</td>
+                          <td>Bello</td>
+                          <td>AV 55 47 56</td>
+                          <td>Sofia Perez</td>
+                          <td>3157041526</td>
+                          <td>info@bombay.com</td>
+                          <td>Inactivo</td>
+                          <td>
+                            <i class="mdi mdi-toggle-switch-off toggle-icon" id="cliente-icon"></i>
+                          </td>
+                          <td>
+                            <a type="button" class="btn btn-primary" onclick="editarRegistro(this)"
+                              style="background-color:rgb(163, 186, 201); " data-bs-toggle="modal"
+                              data-bs-target="#exampleModal">
+                              <i class="mdi mdi-account-edit" style="color: black;"></i>
+                            </a>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>Empresa</td>
+                          <td>NIT</td>
+                          <td>890.914.215-8</td>
+                          <td>Mercantil de textiles S.A.S</td>
+                          <td>textiles</td>
+                          <td>Envigado</td>
+                          <td>CL 10 26 104</td>
+                          <td>Manuel Pinzon</td>
+                          <td>604 6041521</td>
+                          <td>contabilidad@textiles.com</td>
+                          <td>Inactivo</td>
+                          <td>
+                            <i class="mdi mdi-toggle-switch-off toggle-icon" id="cliente-icon"></i>
+                          </td>
+                          <td>
+                            <a type="button" class="btn btn-primary" onclick="editarRegistro(this)"
+                              style="background-color:rgb(163, 186, 201); " data-bs-toggle="modal"
+                              data-bs-target="#exampleModal">
+                              <i class="mdi mdi-account-edit" style="color: black;"></i>
+                            </a>
+                          </td>
+                        </tr>
+                        
+                      </tbody>
+                      <tfoot>
+                        
+                      </tfoot>
+                    </table>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+
+            <!-- Modal Formulario Editar -->
+            <div class="modal " id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">Editar Proveedor</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body">
+                    <div class="card-body">
+                      <form action="">
+                        <div class="row">
+                          <div class="col-md-6">
+                            <label for="tipoProveedor">Tipo de Proveedor</label><br>
+                            <select id="tipoProveedor" class="form-select form-control col-sm-12 ">
+                              <option value="Empresa">Empresa</option>
+                              <option value="Persona natural">Persona</option>
+                            </select>
+                            <div id="errorTipoProveedor"></div><br>
+                          </div>
+                          <div class="col-md-6">
+                            <label for="tipoIdentificacion">Tipo de Documento</label><br>
+                            <select id="tipoIdentificacion" class="form-select form-control col-sm-12 ">
+                              <option value="NIT">NIT</option>
+                              <option value="C.C">Cedula Ciudadania</option>
+                              <option value="C.E">Cedula Extranjera</option>
+                              <option value="T.E">Tarjeta Extranjera</option>
+                              <option value="T.I">Tarjeta de Identidad</option>
+                            </select>
+                            <div id="errorTipoIdentificacion"></div><br>
+                          </div>
+                        </div>
+
+                        <div class="row ">
+                          <div class="col-md-6">
+                            <label for="">Numero de Identificación</label><br>
+                            <input type="text" class="form-control col-sm-12" id="numeroIdentificacion"
+                              placeholder="0000000000">
+                            <div id="errorNumeroIdentificacion"></div><br>
+                          </div>
+                          <div class="col-md-6">
+                            <label for="">Razon Social</label><br>
+                            <input type="text" class="form-control col-sm-12" id="razonSocial"
+                              placeholder="Ejm: Textiles S.A.S">
+                            <div id="errorRazonSocial"></div><br>
+                          </div>
+                        </div>
+
+                        <div class="row">
+                          <div class="col-md-6">
+                            <label for="">Nombre Comercial</label><br>
+                            <input type="text" class="form-control col-sm-12" id="nombreComercial"
+                              placeholder="Ejm: Textiles">
+                            <div id="errorNombreComercial"></div><br>
+                          </div>
+                          <div class="col-md-6">
+                            <label for="">Ciudad</label><br>
+                            <input type="text" class="form-control col-sm-12" id="ciudad"
+                              placeholder="Medellín, Bogota, Cali">
+                            <div id="errorCiudad"></div><br>
+                          </div>
+                        </div>
+
+                        <div class="row">
+                          <div class="col-md-6">
+                            <label for="">Dirección</label><br>
+                            <input type="text" class="form-control col-sm-12" id="direccion"
+                              placeholder="Av 00 CL 00 00">
+                            <div id="errorDireccion"></div><br>
+                          </div>
+                          <div class="col-md-6">
+                            <label for="">Contacto</label><br>
+                            <input type="text" class="form-control col-sm-12" id="contacto"
+                              placeholder="Ejm: Juanito Contalo">
+                            <div id="errorContacto"></div><br>
+                          </div>
+                        </div>
+
+                        <div class="row">
+                          <div class="col-md-6">
+                            <label for="">Télefono</label><br>
+                            <input type="text" class="form-control col-sm-12" id="telefono" placeholder="0000000000">
+                            <div id="errorTelefono"></div><br>
+                          </div>
+                          <div class="col-md-6">
+                            <label for="">Correo Electrónico</label><br>
+                            <input type="text" class="form-control col-sm-12" id="correo"
+                              placeholder="Ejm: textiles@gmail.com">
+                            <div id="errorCorreo"></div><br>
+                          </div>
+                        </div>
+
+                        <div class="row">
+                          <div class="col-md-6">
+                            <label for="">Estado</label><br>
+                            <select id="estado" class="form-select form-control col-sm-12 ">
+                              <option value="Activo">Activo</option>
+                              <option value="Inactivo">Inactivo</option>
+                            </select>
+                            <div id="errorEstado"></div><br>
+                          </div>
+                        </div>
+                      </form>
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                        <button id="btnActualizar" type="button" class="btn btn-primary">Guardar</button>
+                      </div>
+
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+
+            <!-- Modal Formulario Crear -->
+            <div class="modal " id="exampleModal1" tabindex="-1" aria-labelledby="exampleModalLabel1" aria-hidden="true" style="top:-15%;">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel1">Crear Proveedor</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body">
+                    <div class="card-body">
+                      <form action="">
+                        <div class="row">
+                          <div class="col-md-6">
+                            <label for="tipoProveedor1">Tipo de Proveedor</label><br>
+                            <select id="tipoProveedor1" class="form-select form-control col-sm-12 ">
+                              <option value="Empresa">Empresa</option>
+                              <option value="Persona natural">Persona natural</option>
+                            </select>
+                            <div id="errorTipoProveedor"></div><br>
+                          </div>
+                          <div class="col-md-6">
+                            <label for="tipoIdentificacion1">Tipo de Documento</label><br>
+                            <select id="tipoIdentificacion1" class="form-select form-control col-sm-12 ">
+                              <option value="NIT">NIT</option>
+                              <option value="C.C">Cedula Ciudadania</option>
+                              <option value="C.E">Cedula Extranjera</option>
+                              <option value="T.E">Tarjeta Extranjera</option>
+                              <option value="T.I">Tarjeta de Identidad</option>
+                            </select>
+                            <div id="errorTipoIdentificacion1"></div><br>
+                          </div>
+                        </div>
+
+                        <div class="row ">
+                          <div class="col-md-6">
+                            <label for="">Numero de Identificación</label><br>
+                            <input type="number" class="form-control col-sm-12" id="numeroIdentificacion1"
+                              placeholder="0000000000">
+                            <div id="errorNumeroIdentificacion1"></div><br>
+                          </div>
+                          <div class="col-md-6">
+                            <label for="">Razon Social</label><br>
+                            <input type="text" class="form-control col-sm-12" id="razonSocial1"
+                              placeholder="Ejm: Textiles S.A.S">
+                            <div id="errorRazonSocial1"></div><br>
+                          </div>
+                        </div>
+
+                        <div class="row">
+                          <div class="col-md-6">
+                            <label for="">Nombre Comercial</label><br>
+                            <input type="text" class="form-control col-sm-12" id="nombreComercial1"
+                              placeholder="Ejm: Textiles">
+                            <div id="errorNombreComercial1"></div><br>
+                          </div>
+                          <div class="col-md-6">
+                            <label for="">Ciudad</label><br>
+                            <input type="text" class="form-control col-sm-12" id="ciudad1"
+                              placeholder="Medellín, Bogota, Cali">
+                            <div id="errorCiudad1"></div><br>
+                          </div>
+                        </div>
+
+                        <div class="row">
+                          <div class="col-md-6">
+                            <label for="">Dirrección</label><br>
+                            <input type="text" class="form-control col-sm-12" id="direccion1"
+                              placeholder="Av 00 CL 00 00">
+                            <div id="errorDireccion1"></div><br>
+                          </div>
+                          <div class="col-md-6">
+                            <label for="">Contacto</label><br>
+                            <input type="text" class="form-control col-sm-12" id="contacto1"
+                              placeholder="Ejm: Juanito Contalo">
+                            <div id="errorContacto1"></div><br>
+                          </div>
+                        </div>
+
+                        <div class="row">
+                          <div class="col-md-6">
+                            <label for="">Télefono</label><br>
+                            <input type="text" class="form-control col-sm-12" id="telefono1" placeholder="0000000000">
+                            <div id="errorTelefono1"></div><br>
+                          </div>
+                          <div class="col-md-6">
+                            <label for="">Correo Electrónico</label><br>
+                            <input type="text" class="form-control col-sm-12" id="correo1"
+                              placeholder="Ejm: textiles@gmail.com">
+                            <div id="errorCorreo1"></div><br>
+                          </div>
+                        </div>
+
+                        <div class="row">
+                          <div class="col-md-6">
+                            <label for="">Estado</label><br>
+                            <select id="estado1" class="form-select form-control col-sm-12 ">
+                              <option value="Activo">Activo</option>
+                              <option value="Inactivo">Inactivo</option>
+                            </select>
+                            <div id="errorEstado1"></div><br>
+                          </div>
+                        </div>
+                      </form>
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                        <button id="btnRegistrar" type="button" class="btn btn-primary">Guardar</button>
+                      </div>
+
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+
+            <footer class="footer">
+              <div class="d-sm-flex justify-content-center justify-content-sm-between">
+                <span class="float-none float-sm-right d-block mt-1 mt-sm-0 text-center">Copyright © 2023-2024 CuatroSoles. Todos los derechos reservados.</span>
+              </div>
+            </footer>
+          
+          </div>          
+        </div>        
+      </div>
+    </div>
+  </div>
+
+  <script src="https://kit.fontawesome.com/5f0060c70f.js" crossorigin="anonymous"></script>
+
+  <script src="https://unpkg.com/xlsx/dist/xlsx.full.min.js"></script>
+  <script src="../../js/proveedor/listarProveedor.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+  <script src="../../vendors/js/vendor.bundle.base.js"></script>
+  <script src="../../vendors/bootstrap-datepicker/bootstrap-datepicker.min.js"></script>
+  <script src="../../js/off-canvas.js"></script>
+  <script src="../../js/hoverable-collapse.js"></script>
+  <script src="../../js/template.js"></script>
+  <script src="../../js/settings.js"></script>
+  <script src="../../js/todolist.js"></script>
+
+</body>
+
+</html>
+
+

@@ -1,0 +1,617 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Cuatro Soles</title>
+  
+  
+  <link rel="stylesheet" href="../../vendors/feather/feather.css">  
+  <link rel="stylesheet" href="../../vendors/ti-icons/css/themify-icons.css">
+  <link rel="stylesheet" href="../../vendors/typicons/typicons.css">
+  <link rel="stylesheet" href="../../vendors/simple-line-icons/css/simple-line-icons.css">
+  <link rel="stylesheet" href="../../vendors/mdi/css/materialdesignicons.min.css">  
+  <link rel="stylesheet" href="../../vendors/css/vendor.bundle.base.css">
+  <link rel="stylesheet" href="../../css/vertical-layout-light/style.css">
+  <link rel="shortcut icon" href="../../images/favicon.png" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha384-ezF3lHYoUGYpJw/M+/rWJ8UH0gSqK+yxrPC3gQC2q3lqYgN6r3PMj0Et9bPPLGiS" crossorigin="anonymous">
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.9.3/html2pdf.bundle.min.js"></script>
+  
+</head>
+
+<body>
+  <div class="container-scroller">
+    
+    <nav class="navbar default-layout col-lg-12 col-12 p-0 fixed-top d-flex align-items-top flex-row">
+      <div class="text-center navbar-brand-wrapper d-flex align-items-center justify-content-start">
+        <div class="me-3">
+          <button class="navbar-toggler navbar-toggler align-self-center" type="button" data-bs-toggle="minimize">
+            <span class="icon-menu"></span>
+          </button>
+        </div>
+        <div>
+          <a class="navbar-brand brand-logo" href="#">
+            <h3>Cuatro soles</h3>
+            <!-- <img src="../../images/logo.svg" alt="logo" /> -->
+          </a>
+          <a class="navbar-brand brand-logo-mini" href="#">
+            <img src="../../images/logo-mini.svg" alt="logo" />
+          </a>
+        </div>
+      </div>
+      <div class="navbar-menu-wrapper d-flex align-items-top"> 
+        <ul class="navbar-nav">
+          <li class="nav-item font-weight-semibold d-none d-lg-block ms-0">
+            <h1 class="welcome-text"><span class="text-black fw-bold">Ventas</span></h1>
+            <h3 class="welcome-sub-text">Tabla de registros</h3>
+          </li>
+        </ul>
+        <ul class="navbar-nav ms-auto">          
+          <li class="nav-item dropdown d-none d-lg-block user-dropdown">
+            <a class="nav-link" id="UserDropdown" href="#" data-bs-toggle="dropdown" aria-expanded="false">
+              <img class="img-xs rounded-circle" src="../../images/faces/face8.jpg" alt="Profile image"> </a>
+            <div class="dropdown-menu dropdown-menu-right navbar-dropdown" aria-labelledby="UserDropdown">
+              <div class="dropdown-header text-center">
+                <img class="img-md rounded-circle" src="../../images/faces/face8.jpg" alt="Profile image">
+                <p class="mb-1 mt-3 font-weight-semibold">Allen Moreno</p>
+                <p class="fw-light text-muted mb-0">allenmoreno@gmail.com</p>
+              </div>
+              <a class="dropdown-item"><i class="dropdown-item-icon mdi mdi-account-outline text-primary me-2"></i> Mi Perfil<span class="badge badge-pill badge-danger">1</span></a>             
+              <a class="dropdown-item"><i class="dropdown-item-icon mdi mdi-power text-primary me-2"></i>Salir</a>
+            </div>
+          </li>
+        </ul>
+        <button class="navbar-toggler navbar-toggler-right d-lg-none align-self-center" type="button" data-bs-toggle="offcanvas">
+          <span class="mdi mdi-menu"></span>
+        </button>
+      </div>  
+    </nav>
+    
+    <div class="container-fluid page-body-wrapper">      
+      <nav class="sidebar sidebar-offcanvas" id="sidebar">
+        <ul class="nav">
+          <li class="nav-item">
+            <a class="nav-link" href="../dashboard/chartjs.html" aria-expanded="false" aria-controls="dashboard">
+              <i class="menu-icon mdi mdi-chart-bar"></i>
+              <span class="menu-title">Dashboard</span>
+            </a>
+          </li>
+        
+          <li class="nav-item">
+            <a class="nav-link" href="../usuario/listarUsuario.html" aria-expanded="false" aria-controls="usuarios">
+              <i class="menu-icon mdi mdi-account-tie"></i>
+              <span class="menu-title">Usuarios</span>
+            </a>
+          </li>
+        
+          <li class="nav-item">
+            <a class="nav-link" data-bs-toggle="collapse" href="#compras" aria-expanded="false" aria-controls="compras">
+              <i class="menu-icon mdi mdi-cart"></i>
+              <span class="menu-title">Compras</span>
+              <i class="menu-arrow"></i>
+            </a>
+            <div class="collapse" id="compras">
+              <ul class="nav flex-column sub-menu">
+                <li class="nav-item"><a class="nav-link" href="../proveedor/listarProveedor.html">Proveedores</a></li>
+                <li class="nav-item"><a class="nav-link" href="../insumos/Insumo.html">Insumos</a></li>
+                <li class="nav-item"><a class="nav-link" href="../compra/listarCompra.html">Compras</a></li>
+                <li class="nav-item"><a class="nav-link" href="../abonos/Abonos.html">Abonos</a></li>
+              </ul>
+            </div>
+          </li>
+        
+          <li class="nav-item">
+            <a class="nav-link" data-bs-toggle="collapse" href="#produccion" aria-expanded="false" aria-controls="produccion">
+              <i class="menu-icon mdi mdi-chart-line"></i>
+              <span class="menu-title">Producción</span>
+              <i class="menu-arrow"></i>
+            </a>
+            <div class="collapse" id="produccion">
+              <ul class="nav flex-column sub-menu">
+                <li class="nav-item"><a class="nav-link" href="../empleado/listarEmpleado.html">Empleados</a></li>
+                <li class="nav-item"><a class="nav-link" href="../main/main.html">Producción</a></li>
+                <li class="nav-item"><a class="nav-link" href="../rendimiento/rendimiento.html">Rendimiento</a></li>
+                <li class="nav-item"><a class="nav-link" href="../jornadaLaboral/jornadaLaboral.html">Jornada Laboral</a></li>
+                <li class="nav-item"><a class="nav-link" href="../regProduccion/regProduccion.html">Reg. Producción</a></li>
+              </ul>
+            </div>
+          </li>
+        
+          <li class="nav-item">
+            <a class="nav-link" data-bs-toggle="collapse" href="#ventas" aria-expanded="false" aria-controls="ventas">
+              <i class="menu-icon mdi mdi-cash-register"></i>
+              <span class="menu-title">Ventas</span>
+              <i class="menu-arrow"></i>
+            </a>
+            <div class="collapse show" id="ventas">
+              <ul class="nav flex-column sub-menu active">
+                <li class="nav-item"><a class="nav-link" href="../cliente/listarCliente.html">Clientes</a></li>
+                <li class="nav-item"><a class="nav-link" href="../Pedido/listarPedido.html">Pedidos</a></li>
+                <li class="nav-item active"><a class="nav-link" href="../venta/listarVenta.html">Ventas</a></li>
+                <li class="nav-item"><a class="nav-link" href="../abonosVenta/listarAbonos.html">Abonos</a></li>
+              </ul>
+            </div>
+          </li>
+        </ul>
+                
+      </nav>
+            
+      <div class="main-panel">
+        <div class="content-wrapper">
+          <div class="row">
+            <!-- Sidebar Tasks-->
+            <div class="col-sm-12">
+                <div class="home-tab">
+                  <div class="tab-content tab-content-basic">
+                    <div class="d-sm-flex align-items-center justify-content-between border-bottom">
+                      <ul class="nav nav-tabs" role="tablist">
+                        <li class="nav-item">
+                          <form class="search-form" action="#">
+                            <i class="icon-search"></i>
+                            <input type="search" class="form-control" placeholder="Buscar" title="Search here">                            
+                          </form>
+                        </li>                       
+                      </ul>
+                      
+                      <div>
+                        <a href="#" onclick="descargarExcel()" class="btn btn-success" style="background-color: #058143; color:aliceblue"><span class="mdi mdi-file-excel"></span> Reporte de Ventas</a>
+                        
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+
+            <div class="col-lg-12 grid-margin stretch-card">
+              <div class="card">
+                <div class="card-body">
+                  <div class="d-sm-flex align-items-center justify-content-between border-bottom">
+                    <div>
+                      <h2 class="card-title">Ventas</h2>                  
+                      <p class="card-description">Registros</p>
+                    </div>                    
+
+                  </div>
+                  
+                  <div class="table-responsive">
+                    <table class="table table-hover ">
+                      <thead>
+                        <tr>
+                          <th>Cliente</th>
+                          <th>Pedido</th>
+                          <th>Orden De Trabajo</th>
+                          <th>Fecha Orden</th>
+                          <th>Fecha Entrega Orden</th>
+                          <th>Total</th>
+                          <th>Abonado</th>
+                          <th>Restante</th>
+                          <th>Forma De Pago</th>
+                          <th>Estado</th>
+                          <th></th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td>Lili pink</td>
+                          <td>1010</td>
+                          <td>231234</td>
+                          <td>01-06-2023</td>
+                          <td>30-06-2023</td>
+                          <td>4.500.000,00</td>
+                          <td>1.000.000,00</td>
+                          <td>3.500.000,00</td>
+                          <td>Crédito </td>
+                          <td>Pendiente</td>
+                          <td>
+                            <button class="btn btn-secondary" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal"><i class="mdi mdi-file-document" style="color: black;"></i></button>
+                            <a href="../abonosVenta/crearAbonoVenta.html" type="button" class="btn btn-primary" style="background-color: #86bba0;" ><i class="mdi mdi-cash-usd" style="color: black;"></i></a>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>Leonisa S.A.S</td>
+                          <td>1011</td>
+                          <td>989832</td>
+                          <td>15-06-2023</td>
+                          <td>15-07-2023</td>                          
+                          <td>5.500.000,00</td>
+                          <td>----</td>
+                          <td>----</td>
+                          <td>Contado</td>
+                          <td>Pago</td>
+                          <td>
+                            <button class="btn btn-secondary" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal"><i class="mdi mdi-file-document" style="color: black;"></i></button>
+                            <button class="btn btn-secondary" type="button" style="background-color:rgb(201, 163, 163); " data-bs-toggle="modal" data-bs-target="#comprobanteModal"><i class="mdi mdi-file-pdf" style="color: black;"></i></button>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>Telas y telas</td>
+                          <td>1012</td>
+                          <td>545213</td>
+                          <td>27-06-2023</td>
+                          <td>01-08-2023</td>
+                          <td>3.800.000,00</td>   
+                          <td>----</td>
+                          <td>----</td>                       
+                          <td>Contado</td>
+                          <td>Pago</td>
+                          <td>
+                            <button class="btn btn-secondary" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal"><i class="mdi mdi-file-document" style="color: black;"></i></button>
+                            <button class="btn btn-secondary" type="button" style="background-color:rgb(201, 163, 163); " data-bs-toggle="modal" data-bs-target="#comprobanteModal"><i class="mdi mdi-file-pdf" style="color: black;"></i></button>
+                          </td>
+                        </tr>                        
+                      </tbody>
+                    </table>                    
+                  </div>
+                </div>
+              </div>
+            </div>
+
+                   <!-- Modal Formulario Ver detalle -->
+            <div class="modal " id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true" style="top: -15%;" >
+              <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">Detalles de la venta</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body">
+
+                    <div class="row">
+                      <div class="col-sm-4">
+                        <strong>Id Venta</strong>
+                        <p>2001</p>
+                      </div>
+                        
+                      <div class="col-sm-4">
+                        <strong>Fecha Venta</strong>
+                        <p>01/07/2023</p>
+                      </div>  
+
+                      <div class="col-sm-4">
+                        <strong>Estado de Pago</strong>
+                        <p>Pendiente</p>
+                      </div>  
+                    </div>  
+
+                      <div class="row">
+                        <div class="col-sm-4">
+                          <strong>Cliente</strong>
+                          <p>Monasyery S.A.S</p>
+                        </div>
+                        <div class="col-sm-4">
+                          <strong>Contacto</strong>
+                          <p>Juan Pablo</p>
+                        </div>  
+                        <div class="col-sm-4">
+                          <strong>Orden de Trabajo</strong>
+                          <p>1548596</p>
+                        </div>  
+                      </div>        
+                      
+                      
+                      <div class="row">                      
+                        <div class="col-sm-4">
+                          <strong>Fecha Orden de Trabajo </strong>
+                          <p>01/06/2023</p>
+                        </div>
+                        <div class="col-sm-4">
+                          <strong>Fecha de registro orden</strong>
+                          <p>05/06/2023</p>
+                        </div>
+                        <div class="col-sm-4">
+                          <strong>Fecha de entrega</strong>
+                          <p>30/06/2023</p>
+                        </div>
+                      </div><br><br>                                                                        
+                                                              
+                      <div class="table-responsive">
+                        <table  class="table table-horver">
+                          <thead>
+                            <tr>
+                              <th>Referencia</th>
+                              <th>Descripción</th>
+                              <th>Procesos</th>
+                              <th>Valor Unitario</th>
+                              <th>Cantitad Total</th>
+                              <th>Valor Total</th>                          
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <td>154286</td>
+                              <td>Tangas</td>
+                              <td>Recubridora - Fileteadora - Presilladora</td>
+                              <td>1.500,00</td>
+                              <td>3000</td>
+                              <td>4.500.000,00</td>                            
+                            </tr>
+                            <tr><table class="table table-horver table-condensed">
+                              <thead class="thead-light">
+                                <tr><br>
+                                  <th>Color/Talla</th>
+                                  <th>S</th>
+                                  <th>M</th>
+                                  <th>L</th>
+                                  <th>XL</th>
+                                  <th>Cantitad</th>
+                                </tr>
+                              </thead>
+                              <tbody class="small">
+                                <tr>
+                                  <td>Blanco</td>
+                                  <td>250</td>
+                                  <td>250</td>
+                                  <td>250</td>
+                                  <td>250</td>
+                                  <td>1000</td>
+                                </tr>
+                                <tr>
+                                  <td>Negro</td>
+                                  <td>250</td>
+                                  <td>250</td>
+                                  <td>250</td>
+                                  <td>250</td>
+                                  <td>1000</td>
+                                </tr>
+                                <tr>
+                                  <td>Gris</td>
+                                  <td>250</td>
+                                  <td>250</td>
+                                  <td>250</td>
+                                  <td>250</td>
+                                  <td>1000</td>
+                                </tr>
+                                <tr>
+                                  <td><strong>Cant. Total</strong></td>
+                                  <td></td>
+                                  <td></td>
+                                  <td></td>
+                                  <td></td>
+                                  <td>3000</td>
+                                </tr>
+                              </tbody>
+                            </table></tr>
+                          </tbody>                 
+                        </table>                                         
+                      </div>
+                      <div class="row my-4">
+                        
+                        <div class="col-sm-6">                        
+                          <strong>Total Neto</strong>
+                          <p>$ 4.500.000,00</p>
+                        </div>
+                        <div class="col-sm-6">
+                          <strong>Forma de Pago</strong>
+                          <p>Crédito</p>
+                        </div>
+                        
+                      </div> 
+                    <div class="card-body">                    
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Regresar</button>                      
+                      </div>          
+                    </div>
+            
+                  </div>
+                  
+                </div>
+              </div>
+            </div>
+
+            <!-- Modal Generar Comprobante de venta -->
+            <div class="modal fade" id="comprobanteModal" tabindex="-1" role="dialog" aria-labelledby="comprobanteModalLabel" aria-hidden="true">
+              <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="comprobanteModalLabel">VENTA 1011</h5>
+                  </div>
+                  <div class="modal-body comprobante" id="comprobanteModal">
+                    <div class="d-flex justify-content-center align-items-center flex-column">
+                      <p>COMPROBANTE DE VENTA #1</p>
+                      <p>______________________________</p>
+                      <p>CUATRO SOLES</p>
+                      <p>telefono</p>
+                      <p>dirección</p>
+                      <p>Bello-Antioquia</p>
+
+                      <p>10/07/2023 2:00 pm</p>
+                      <p>______________________________</p>
+                    </div>
+                    <div class="mx-5">
+                      <p >ID VENTA: 1011</p>
+                      <p>FECHA VENTA: 07/02/23</p>
+                      <p>CLIENTE: Mattelsa S.A.S</p>
+                      <p>NIT: 901.548.148-9</p>
+                      <p>DIRECCIÓN: CL 10 45A 12 Itagui</p>
+                      <p>TELÉFONO: 604 5124578</p>
+                      <p>ORDEN DE TRABAJO: 142859</p>
+                      <p>REFERENCIA(S): 212332</p>
+                      <p>PRECESOS: Recubridora - Fileteadora - Plana</p>
+                      <p>COLOR: Blanco - Negro</p>
+                      <p>TALLA: S - M - L </p>
+                      
+                      <p>CANTIDAD: 2.000</p>
+                      
+                      <p>VALOR UNITARIO: $ 1.800</p>
+                      <p>_________</p>
+                      <p>VALOR TOTAL: $ 3.600.000,00</p>
+                      <p>FORMA DE PAGO: Contado</p>
+                    </div>
+                  </div>
+                    
+                  <div class="modal-footer d-flex justify-content-center ">
+                    <a href="#" onclick="descargarPDF()" class="btn btn-danger" style="background-color: #810505;"><span class="mdi mdi-file-pdf " style="font-size: 20 px;"> </span>Descargar</a>
+
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Regresar</button>  
+                  </div>    
+                </div>
+              </div>
+            </div>
+
+
+
+          
+                   <!-- Modal Generar comprobante de pago -->
+                   <div class="modal " id="exampleModal1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true" style="top: -15%;" >
+                    <div class="modal-dialog ">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h1 class="modal-title fs-5" id="exampleModalLabel">Detalles del pedido</h1>
+                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">    
+                            <div class="row">
+                              <div class="col-sm-4">
+                                <strong>COMPRO:</strong>
+                                <p>Monasyery S.A.S</p>
+                              </div>
+                              <div class="col-sm-4">
+                                <strong>Contacto:</strong>
+                                <p>Juan Pablo</p>
+                              </div>  
+                              <div class="col-sm-4">
+                                <strong>Orden de Trabajo</strong>
+                                <p>1548596</p>
+                              </div>  
+                            </div>        
+                            
+                            
+                            <div class="row">                      
+                              <div class="col-sm-4">
+                                <strong>Fecha de Compra</strong>
+                                <p>01/06/2023</p>
+                              </div>
+                              <div class="col-sm-4">
+                                <strong>Fecha de registro</strong>
+                                <p>05/06/2023</p>
+                              </div>
+                              <div class="col-sm-4">
+                                <strong>Fecha de entrega</strong>
+                                <p>30/06/2023</p>
+                              </div>
+                            </div>                                                                        
+                                                                    
+                            <div class="table-responsive">
+                              <table  class="table table-horver">
+                                <thead>
+                                  <tr>
+                                    <th>Referencia</th>
+                                    <th>Descripción</th>
+                                    <th>Procesos</th>
+                                    <th>Valor Unitario</th>
+                                    <th>Cantitad Total</th>
+                                    <th>Valor Total</th>                          
+                                  </tr>
+                                </thead>
+                                <tbody>
+                                  <tr>
+                                    <td>154286</td>
+                                    <td>Tangas</td>
+                                    <td>Recubridora - Fileteadora - Presilladora</td>
+                                    <td>1.500,00</td>
+                                    <td>3000</td>
+                                    <td>4.500.000,00</td>                            
+                                  </tr>
+                                  <tr><table class="table table-horver">
+                                    <thead class="thead-light">
+                                      <tr>
+                                        <th>Color/Talla</th>
+                                        <th>S</th>
+                                        <th>M</th>
+                                        <th>L</th>
+                                        <th>XL</th>
+                                        <th>Cantitad Total</th>
+                                      </tr>
+                                    </thead>
+                                    <tbody>
+                                      <tr>
+                                        <td>Blanco</td>
+                                        <td>250</td>
+                                        <td>250</td>
+                                        <td>250</td>
+                                        <td>250</td>
+                                        <td>1000</td>
+                                      </tr>
+                                      <tr>
+                                        <td>Negro</td>
+                                        <td>250</td>
+                                        <td>250</td>
+                                        <td>250</td>
+                                        <td>250</td>
+                                        <td>1000</td>
+                                      </tr>
+                                      <tr>
+                                        <td>Grisa</td>
+                                        <td>250</td>
+                                        <td>250</td>
+                                        <td>250</td>
+                                        <td>250</td>
+                                        <td>1000</td>
+                                      </tr>
+                                      <tr>
+                                        <td><strong>Total</strong></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td>3000</td>
+                                      </tr>
+                                    </tbody>
+                                  </table>}</tr>
+                                </tbody>                 
+                              </table><br>                                          
+                            </div>
+                            <div class="row">
+                              <div class="col-sm-6">
+                                <strong>Forma de Pago</strong>
+                                <p>Credito</p>
+                              </div>
+                              <div class="col-sm-6">                        
+                                <strong>Total Neto:</strong>4.500.000,00
+                              </div>
+                            </div> 
+                          <div class="card-body">                    
+                            <div class="modal-footer">
+                              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Regresar</button>                      
+                            </div>          
+                        </div>
+                  
+                        </div>
+                        
+                      </div>
+                    </div>
+                  </div>  
+
+
+            <footer class="footer">
+                <div class="d-sm-flex justify-content-center justify-content-sm-between">
+                  <span class="float-none float-sm-right d-block mt-1 mt-sm-0 text-center">Copyright © 2023-2024 CuatroSoles. Todos los derechos reservados.</span>  
+                </div>
+            </footer>
+        
+          </div>      
+        </div>
+      </div>  
+    </div>
+  </div>   
+    
+  <script src="https://unpkg.com/xlsx/dist/xlsx.full.min.js"></script>
+
+
+  <script src="../../js/venta/listarVenta.js"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+  <script src="../../vendors/js/vendor.bundle.base.js"></script>
+  <script src="../../vendors/bootstrap-datepicker/bootstrap-datepicker.min.js"></script>
+  <script src="../../js/off-canvas.js"></script>
+  <script src="../../js/hoverable-collapse.js"></script>
+  <script src="../../js/template.js"></script>
+  <script src="../../js/settings.js"></script>
+  <script src="../../js/todolist.js"></script>
+
+</body>
+</html>

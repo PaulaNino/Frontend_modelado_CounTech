@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Login V2</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+<!--===============================================================================================-->	
+	<link rel="icon" type="image/png" href="images/icons/favicon.ico"/>
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/bootstrap/css/bootstrap.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="fonts/iconic/css/material-design-iconic-font.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/animate/animate.css">
+<!--===============================================================================================-->	
+	<link rel="stylesheet" type="text/css" href="vendor/css-hamburgers/hamburgers.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/animsition/css/animsition.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/select2/select2.min.css">
+<!--===============================================================================================-->	
+	<link rel="stylesheet" type="text/css" href="vendor/daterangepicker/daterangepicker.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="css/util.css">
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+<!--===============================================================================================-->
+</head>
+<body>
+	
+	<div class="limiter">
+        <div class="container-login100">
+          <div class="wrap-login100">
+            <form class="login100-form validate-form" onsubmit="return cambiarContrasena(event)">
+              <span class="login100-form-title p-b-26">
+                Cambiar contraseña
+              </span>
+              <p>8 caracteres como mínimo, distingue mayúsculas de minúsculas</p>
+              <br>
+              <div class="wrap-input100 validate-input" data-validate="Enter password">
+                <span class="btn-show-pass">
+                  <i class="zmdi zmdi-eye"></i>
+                </span>
+                <input class="input100" type="password" name="password1" id="password1">
+                <span class="focus-input100" data-placeholder="Nueva Contraseña"></span>
+                <p id="passwordError1" class="error-message"></p>
+              </div>
+      
+              <div class="wrap-input100 validate-input" data-validate="Enter password">
+                <span class="btn-show-pass">
+                  <i class="zmdi zmdi-eye"></i>
+                </span>
+                <input class="input100" type="password" name="password2" id="password2">
+                <span class="focus-input100" data-placeholder="Confirmar Contraseña"></span>
+                <p id="passwordError2" class="error-message"></p>
+              </div>
+      
+              <div class="container-login100-form-btn">
+                <div class="wrap-login100-form-btn">
+                  <div class="login100-form-bgbtn"></div>
+                  <button class="login100-form-btn" type="submit">
+                    Cambiar
+                  </button>
+                </div>
+              </div>
+              <div class="container-login100-form-btn">
+                <div class="wrap-login100-form-btn">
+                  <div class="login100-form-bgbtn"></div>
+                  <a class="login100-form-btn" href="index.html">
+                    Cancelar
+                  </a>
+                </div>
+              </div>
+              
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+      
+      <script>
+      function cambiarContrasena(event) {
+        event.preventDefault(); 
+      
+        var password1 = document.getElementById("password1").value;
+        var password2 = document.getElementById("password2").value;
+      
+        var passwordError1 = document.getElementById("passwordError1");
+        var passwordError2 = document.getElementById("passwordError2");
+      
+
+        passwordError1.textContent = "";
+        passwordError2.textContent = "";
+      
+
+        if (password1.length < 8) {
+          passwordError1.textContent = "La contraseña debe tener al menos 8 caracteres.";
+          passwordError1.style.color = "red";
+          return false;
+        }
+      
+
+        if (password1 !== password2) {
+          passwordError2.textContent = "Las contraseñas no coinciden. Por favor, ingresa la misma contraseña en ambos campos.";
+          passwordError2.style.color = "red";
+          return false;
+        }
+      
+
+        window.location.href = "index.html";
+      }
+      
+      function cancelarCambiarContrasena() {
+
+        document.getElementById("password1").value = "";
+        document.getElementById("password2").value = "";
+      
+        document.getElementById("passwordError1").textContent = "";
+        document.getElementById("passwordError2").textContent = "";
+      
+
+      }
+      </script>
+      
+	
+
+	<div id="dropDownSelect1"></div>
+	
+<!--===============================================================================================-->
+	<script src="vendor/jquery/jquery-3.2.1.min.js"></script>
+<!--===============================================================================================-->
+	<script src="vendor/animsition/js/animsition.min.js"></script>
+<!--===============================================================================================-->
+	<script src="vendor/bootstrap/js/popper.js"></script>
+	<script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+<!--===============================================================================================-->
+	<script src="vendor/select2/select2.min.js"></script>
+<!--===============================================================================================-->
+	<script src="vendor/daterangepicker/moment.min.js"></script>
+	<script src="vendor/daterangepicker/daterangepicker.js"></script>
+<!--===============================================================================================-->
+	<script src="vendor/countdowntime/countdowntime.js"></script>
+<!--===============================================================================================-->
+	<script src="js/main.js"></script>
+
+</body>
+</html>

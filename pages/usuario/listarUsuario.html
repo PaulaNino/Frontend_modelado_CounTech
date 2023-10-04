@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Cuatro Soles</title>
+
+  <link rel="stylesheet" href="../../vendors/feather/feather.css">
+  <link rel="stylesheet" href="../../vendors/mdi/css/materialdesignicons.min.css">
+  <link rel="stylesheet" href="../../vendors/ti-icons/css/themify-icons.css">
+  <link rel="stylesheet" href="../../vendors/typicons/typicons.css">
+  <link rel="stylesheet" href="../../vendors/simple-line-icons/css/simple-line-icons.css">
+  <link rel="stylesheet" href="../../vendors/css/vendor.bundle.base.css">
+  <link rel="stylesheet" href="../../css/vertical-layout-light/style.css">
+  <link rel="shortcut icon" href="../../images/favicon.png" />
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-d6XO3qVfXWUfjUJvEnxynJqVpiMhy57o0t2c5Pyci0j8r6LfXwHx89jRYfRhL4xK6JSmERGd+nxyfFtVWMTkwQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+</head>
+
+<body>
+  <div class="container-scroller">
+
+    <nav class="navbar default-layout col-lg-12 col-12 p-0 fixed-top d-flex align-items-top flex-row">
+      <div class="text-center navbar-brand-wrapper d-flex align-items-center justify-content-start">
+        <div class="me-3">
+          <button class="navbar-toggler navbar-toggler align-self-center" type="button" data-bs-toggle="minimize">
+            <span class="icon-menu"></span>
+          </button>
+        </div>
+        <div>
+          <a class="navbar-brand brand-logo" href="#">
+            <h3>Cuatro soles</h3>
+            <!-- <img src="../../images/logo.svg" alt="logo" /> -->
+          </a>
+          <a class="navbar-brand brand-logo-mini" href="#">
+            <img src="../../images/logo-mini.svg" alt="logo" />
+          </a>
+        </div>
+      </div>
+      <div class="navbar-menu-wrapper d-flex align-items-top">
+        <ul class="navbar-nav">
+          <li class="nav-item font-weight-semibold d-none d-lg-block ms-0">
+            <h1 class="welcome-text"><span class="text-black fw-bold">Usuarios</span></h1>
+            <h3 class="welcome-sub-text">Tabla de registros</h3>
+          </li>
+        </ul>
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item dropdown d-none d-lg-block user-dropdown">
+            <a class="nav-link" id="UserDropdown" href="#" data-bs-toggle="dropdown" aria-expanded="false">
+              <img class="img-xs rounded-circle" src="../../images/faces/face8.jpg" alt="Profile image"> </a>
+            <div class="dropdown-menu dropdown-menu-right navbar-dropdown" aria-labelledby="UserDropdown">
+              <div class="dropdown-header text-center">
+                <img class="img-md rounded-circle" src="../../images/faces/face8.jpg" alt="Profile image">
+                <p class="mb-1 mt-3 font-weight-semibold">Allen Moreno</p>
+                <p class="fw-light text-muted mb-0">allenmoreno@gmail.com</p>
+              </div>
+              <a class="dropdown-item"><i class="dropdown-item-icon mdi mdi-account-outline text-primary me-2"></i> Mi
+                Perfil<span class="badge badge-pill badge-danger">1</span></a>
+              <a class="dropdown-item"><i class="dropdown-item-icon mdi mdi-power text-primary me-2"></i>Salir</a>
+            </div>
+          </li>
+        </ul>
+        <button class="navbar-toggler navbar-toggler-right d-lg-none align-self-center" type="button"
+          data-bs-toggle="offcanvas">
+          <span class="mdi mdi-menu"></span>
+        </button>
+      </div>
+    </nav>
+
+    <div class="container-fluid page-body-wrapper">
+      <nav class="sidebar sidebar-offcanvas" id="sidebar">
+        <ul class="nav">
+          <li class="nav-item">
+            <a class="nav-link" href="../dashboard/chartjs.html" aria-expanded="false"
+              aria-controls="dashboard">
+              <i class="menu-icon mdi mdi-chart-bar"></i>
+              <span class="menu-title">Dashboard</span>
+            </a>
+          </li>
+
+          <li class="nav-item active">
+            <a class="nav-link" href="../usuario/listarUsuario.html" aria-expanded="false"
+              aria-controls="usuarios">
+              <i class="menu-icon mdi mdi-account-tie"></i>
+              <span class="menu-title">Usuarios</span>
+            </a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" data-bs-toggle="collapse" href="#compras" aria-expanded="false" aria-controls="compras">
+              <i class="menu-icon mdi mdi-cart"></i>
+              <span class="menu-title">Compras</span>
+              <i class="menu-arrow"></i>
+            </a>
+            <div class="collapse " id="compras">
+              <ul class="nav flex-column sub-menu ">
+                <li class="nav-item "><a class="nav-link" href="../proveedor/listarProveedor.html">Proveedores</a></li>
+                <li class="nav-item"><a class="nav-link" href="../insumos/Insumo.html">Insumos</a></li>
+                <li class="nav-item"><a class="nav-link" href="../compra/listarCompra.html">Compras</a></li>
+                <li class="nav-item"><a class="nav-link" href="../abonos/Abonos.html">Abonos</a></li>
+              </ul>
+            </div>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" data-bs-toggle="collapse" href="#produccion" aria-expanded="false"
+              aria-controls="produccion">
+              <i class="menu-icon mdi mdi-chart-line"></i>
+              <span class="menu-title">Producción</span>
+              <i class="menu-arrow"></i>
+            </a>
+            <div class="collapse " id="produccion">
+              <ul class="nav flex-column sub-menu ">
+                <li class="nav-item "><a class="nav-link" href="../empleado/listarEmpleado.html">Empleados</a></li>
+                <li class="nav-item"><a class="nav-link" href="../main/main.html">Producción</a></li>
+                <li class="nav-item"><a class="nav-link" href="../rendimiento/rendimiento.html">Rendimiento</a></li>
+                <li class="nav-item"><a class="nav-link" href="../jornadaLaboral/jornadaLaboral.html">Jornada Laboral</a></li>
+                <li class="nav-item"><a class="nav-link" href="../regProduccion/regProduccion.html">Reg. Producción</a></li>
+              </ul>
+            </div>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" data-bs-toggle="collapse" href="#ventas" aria-expanded="false" aria-controls="ventas">
+              <i class="menu-icon mdi mdi-cash-register"></i>
+              <span class="menu-title">Ventas</span>
+              <i class="menu-arrow"></i>
+            </a>
+            <div class="collapse" id="ventas">
+              <ul class="nav flex-column sub-menu">
+                <li class="nav-item "><a class="nav-link" href="../cliente/listarCliente.html">Clientes</a></li>
+                <li class="nav-item "><a class="nav-link" href="../Pedido/listarPedido.html">Pedidos</a></li>
+                <li class="nav-item"><a class="nav-link" href="../venta/listarVenta.html">Ventas</a></li>
+                <!--<li class="nav-item"><a class="nav-link" href="">Abonos</a></li>-->
+              </ul>
+            </div>
+          </li>
+        </ul>
+
+      </nav>
+
+      <div class="main-panel">
+        <div class="content-wrapper">
+          <div class="row">
+            <div class="col-sm-12">
+              <div class="home-tab">
+                <div class="tab-content tab-content-basic">
+                  <div class="d-sm-flex align-items-center justify-content-between border-bottom">
+                    <ul class="nav nav-tabs" role="tablist">
+                      <li class="nav-item">
+                        <form class="search-form" action="#">
+                          <i class="mdi mdi-account-search"></i>
+                          <input type="search" class="form-control" placeholder="Buscar" title="Search here">
+                        </form>
+                      </li>
+                    </ul>
+                    <div>
+                    <a href="#" onclick="descargarExcel()" class="btn btn-success" style="background-color: #058143; color:aliceblue"><span class="mdi mdi-file-excel"></span>Excel</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-12 grid-margin stretch-card">
+              <div class="card">
+                <div class="card-body">
+                  <div class="d-sm-flex align-items-center justify-content-between border-bottom">
+                    <div>
+                      <h2 class="card-title">Usuarios</h2>
+                      <p class="card-description">Registros</p>
+                    </div>
+                    <button type="button" class="btn btn-success"
+                      style="background-color:rgb(235, 232, 232); color:black" data-bs-toggle="modal"
+                      data-bs-target="#exampleModal1">
+                      <i class="mdi mdi-account-plus"></i>  Agregar Nuevo Usuario
+                    </button>
+                  </div>
+
+                  <div class="table-responsive">
+                    <table  class="table table-horver ">
+                      <thead>
+                        <tr>                          
+                          <th>Nombre Completo</th>
+                          <th>Cedula</th>
+                          <th>Correo</th>
+                          <th>Telefono</th>
+                          <th>Rol</th>
+                          <th>Estado</th>
+                          <th></th>
+                          <th></th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>                          
+                          <td>Elizabeth Arenas</td>
+                          <td>1007152635</td>
+                          <td>Eliza@hotmail.com</td>
+                          <td>3118524859</td>
+                          <td>Administrador PPAL</td>
+                          <td>Inactivo</td>
+                          <td>
+                            <i class="mdi mdi-toggle-switch-off toggle-icon" id="cliente-icon"></i>
+                          </td>
+                          <td>
+                            <a type="button" class="btn btn-primary" onclick="editarRegistro(this)"
+                            style="background-color:rgb(163, 186, 201); "  data-bs-toggle="modal"
+                              data-bs-target="#exampleModal">
+                              <i class="mdi mdi-account-edit" style="color: black;"></i>
+                            </a>
+                          </td>
+                        </tr>
+                        <tr>                          
+                          <td>Manuela Serrano</td>
+                          <td>1020485962</td>
+                          <td>manuela@gmail.com</td>
+                          <td>3001524859</td>
+                          <td>Administrador</td>
+                          <td>Inactivo</td>
+                          <td>
+                            <i class="mdi mdi-toggle-switch-off toggle-icon" id="cliente-icon"></i>
+                          </td>
+                          <td>
+                            <a type="button" class="btn btn-primary" onclick="editarRegistro(this)"
+                            style="background-color:rgb(163, 186, 201); "  data-bs-toggle="modal"
+                              data-bs-target="#exampleModal">
+                              <i class="mdi mdi-account-edit" style="color: black;"></i>
+                            </a>
+                          </td>
+                        </tr>
+                        <tr>                          
+                          <td>Cesar Alvarez</td>
+                          <td>1020485123</td>
+                          <td>cesar@outlook.com</td>
+                          <td>3214857596</td>
+                          <td>Administrador</td>
+                          <td>Inactivo</td>
+                          <td>
+                            <i class="mdi mdi-toggle-switch-off toggle-icon" id="cliente-icon"></i>
+                          </td>
+                          <td>
+                            <a type="button" class="btn btn-primary" onclick="editarRegistro(this)"
+                            style="background-color:rgb(163, 186, 201); "  data-bs-toggle="modal"
+                              data-bs-target="#exampleModal">
+                              <i class="mdi mdi-account-edit" style="color: black;"></i>
+                            </a>
+                          </td>
+                        </tr>             
+                      </tbody>
+                      <tfoot>
+                        
+                      </tfoot>
+                    </table>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+
+            <!-- Modal Formulario Editar -->
+            <div class="modal " id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel1">Editar Usuario</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body">
+                    <div class="card-body">
+                      <form action="">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <label for="">Nombre completo</label><br>
+                                <input type="text" class="form-control col-sm-12" id="nombre">
+                                <div id="errorNombre"></div><br>
+                            </div>
+                            <div class="col-md-6">
+                                <label for="">Cédula</label><br>
+                                <input type="text" class="form-control col-sm-12" id="cedula" >
+                                <div id="errorCedula"></div><br>
+                            </div>
+                        </div>          
+                        <div class="row">                                    
+                            <div class="col-md-6">
+                                <label for="">Correo electronico</label><br>
+                                <input type="email" class="form-control col-sm-12" id="correo" >
+                                <div id="errorCorreo"></div><br>
+                            </div>
+                            <div class="col-md-6">
+                                <label for="">Telefono</label><br>
+                                <input type="text" class="form-control col-sm-12" id="telefono">
+                                <div id="errorTelefono"></div>
+                            </div>
+                        </div>
+                        <div class="row">                                    
+                          <div class="col-md-6">
+                              <label for="">Rol</label><br>
+                              <input type="text" class="form-control col-sm-12" id="rol" readonly >
+                              <div id="errorRol"></div><br>
+                          </div>
+                          <div class="col-md-6">
+                            <label for="">Estado</label><br>
+                            <select id="estado" class="form-select form-control col-sm-12 ">
+                                <option value="Activo">Activo</option>
+                                <option value="Inactivo">Inactivo</option>
+                            </select>
+                              <div id="errorEstado"></div>
+                          </div>
+                      </div>          
+                    </form>
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                        <button id="btnActualizar" type="button" class="btn btn-primary" >Guardar</button>
+                      </div>            
+                  </div>            
+                  </div>                  
+                </div>
+              </div>
+            </div>
+
+            <!-- Modal Formulario Crear -->
+            <div class="modal " id="exampleModal1" tabindex="-1" aria-labelledby="exampleModalLabel1" aria-hidden="true" style="top:-15%;">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel1">Crear Usuario</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body">
+                    <div class="card-body">
+                      <form action="">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <label for="">Nombre completo</label><br>
+                                <input type="text" class="form-control col-sm-12" id="nombre1">
+                                <div id="errorNombre1"></div><br>
+                            </div>
+                            <div class="col-md-6">
+                                <label for="">Cédula</label><br>
+                                <input type="text" class="form-control col-sm-12" id="cedula1" >
+                                <div id="errorCedula1"></div><br>
+                            </div>
+                        </div>
+          
+                        <div class="row">                                    
+                            <div class="col-md-6">
+                                <label for="">Correo electronico</label><br>
+                                <input type="email" class="form-control col-sm-12" id="correo1" >
+                                <div id="errorCorreo1"></div><br>
+                            </div>
+                            <div class="col-md-6">
+                                <label for="">Telefono</label><br>
+                                <input type="text" class="form-control col-sm-12" id="telefono1">
+                                <div id="errorTelefono1"></div>
+                            </div>
+                        </div>          
+                    </form>
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                        <button id="btnRegistrar" type="button" class="btn btn-primary" >Guardar</button>
+                      </div>            
+                  </div>            
+                  </div>                  
+                </div>
+              </div>
+            </div>
+
+            <footer class="footer">
+              <div class="d-sm-flex justify-content-center justify-content-sm-between">
+                <span class="float-none float-sm-right d-block mt-1 mt-sm-0 text-center">Copyright © 2023-2024 CuatroSoles. Todos los derechos reservados.</span>
+              </div>
+            </footer>
+          
+          </div>          
+        </div>        
+      </div>
+    </div>
+  </div>
+
+  <script src="https://kit.fontawesome.com/5f0060c70f.js" crossorigin="anonymous"></script>
+
+  <script src="https://unpkg.com/xlsx/dist/xlsx.full.min.js"></script>
+  <script src="../../js/usuario/listarUsuario.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+  <script src="../../vendors/js/vendor.bundle.base.js"></script>
+  <script src="../../vendors/bootstrap-datepicker/bootstrap-datepicker.min.js"></script>
+  <script src="../../js/off-canvas.js"></script>
+  <script src="../../js/hoverable-collapse.js"></script>
+  <script src="../../js/template.js"></script>
+  <script src="../../js/settings.js"></script>
+  <script src="../../js/todolist.js"></script>
+
+</body>
+
+</html>
+
+

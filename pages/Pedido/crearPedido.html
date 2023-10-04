@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Cuatro Soles</title>
+
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.14.0/css/bootstrap-select.min.css">
+
+  <link rel="stylesheet" href="../../vendors/feather/feather.css">
+  <link rel="stylesheet" href="../../vendors/mdi/css/materialdesignicons.min.css">
+  <link rel="stylesheet" href="../../vendors/ti-icons/css/themify-icons.css">
+  <link rel="stylesheet" href="../../vendors/typicons/typicons.css">
+  <link rel="stylesheet" href="../../vendors/simple-line-icons/css/simple-line-icons.css">
+  <link rel="stylesheet" href="../../vendors/css/vendor.bundle.base.css">
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  
+  <link rel="stylesheet" href="../../css/vertical-layout-light/style.css">  
+  <link rel="shortcut icon" href="../../images/favicon.png" />
+</head>
+
+<body>
+  <div class="container-scroller">
+    <nav class="navbar default-layout col-lg-12 col-12 p-0 fixed-top d-flex align-items-top flex-row">
+      <div class="text-center navbar-brand-wrapper d-flex align-items-center justify-content-start">
+        <div class="me-3">
+          <button class="navbar-toggler navbar-toggler align-self-center" type="button" data-bs-toggle="minimize">
+            <span class="icon-menu"></span>
+          </button>
+        </div>
+        <div>
+          <a class="navbar-brand brand-logo" href="#">
+            <h3>Cuatro soles</h3>            
+          </a>
+          <a class="navbar-brand brand-logo-mini" href="#">
+            <img src="../../images/logo-mini.svg" alt="logo" />
+          </a>
+        </div>
+      </div>
+      <div class="navbar-menu-wrapper d-flex align-items-top"> 
+        <ul class="navbar-nav">
+          <li class="nav-item font-weight-semibold d-none d-lg-block ms-0">
+            <h1 class="welcome-text"><span class="text-black fw-bold">Pedidos</span></h1>
+            <h3 class="welcome-sub-text">Nuevo Pedido</h3>
+          </li>
+        </ul>
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item dropdown d-none d-lg-block user-dropdown">
+            <a class="nav-link" id="UserDropdown" href="#" data-bs-toggle="dropdown" aria-expanded="false">
+              <img class="img-xs rounded-circle" src="../../images/faces/face8.jpg" alt="Profile image"> </a>
+            <div class="dropdown-menu dropdown-menu-right navbar-dropdown" aria-labelledby="UserDropdown">
+              <div class="dropdown-header text-center">
+                <img class="img-md rounded-circle" src="../../images/faces/face8.jpg" alt="Profile image">
+                <p class="mb-1 mt-3 font-weight-semibold">Allen Moreno</p>
+                <p class="fw-light text-muted mb-0">allenmoreno@gmail.com</p>
+              </div>
+              <a class="dropdown-item"><i class="dropdown-item-icon mdi mdi-account-outline text-primary me-2"></i> My Profile <span class="badge badge-pill badge-danger">1</span></a>              
+              <a class="dropdown-item"><i class="dropdown-item-icon mdi mdi-power text-primary me-2"></i>Sign Out</a>
+            </div>
+          </li>
+        </ul>
+        <button class="navbar-toggler navbar-toggler-right d-lg-none align-self-center" type="button" data-bs-toggle="offcanvas">
+          <span class="mdi mdi-menu"></span>
+        </button>
+      </div>  
+    </nav>
+    <!-- partial -->
+    <div class="container-fluid page-body-wrapper">
+      <!-- partial:../../partials/_settings-panel.html -->
+      
+      
+      <!-- partial -->
+      <!-- partial:../../partials/_sidebar.html -->
+      <nav class="sidebar sidebar-offcanvas" id="sidebar">
+        <ul class="nav">
+          <li class="nav-item">
+            <a class="nav-link" href="../dashboard/chartjs.html" aria-expanded="false" aria-controls="dashboard">
+              <i class="menu-icon mdi mdi-chart-bar"></i>
+              <span class="menu-title">Dashboard</span>
+            </a>
+          </li>
+        
+          <li class="nav-item">
+            <a class="nav-link" href="../usuario/listarUsuario.html" aria-expanded="false" aria-controls="usuarios">
+              <i class="menu-icon mdi mdi-account-tie"></i>
+              <span class="menu-title">Usuarios</span>
+            </a>
+          </li>
+        
+          <li class="nav-item">
+            <a class="nav-link" data-bs-toggle="collapse" href="#compras" aria-expanded="false" aria-controls="compras">
+              <i class="menu-icon mdi mdi-cart"></i>
+              <span class="menu-title">Compras</span>
+              <i class="menu-arrow"></i>
+            </a>
+            <div class="collapse" id="compras">
+              <ul class="nav flex-column sub-menu">
+                <li class="nav-item"><a class="nav-link" href="../proveedor/listarProveedor.html">Proveedores</a></li>
+                <li class="nav-item"><a class="nav-link" href="../insumos/Insumo.html">Insumos</a></li>
+                <li class="nav-item"><a class="nav-link" href="../compra/listarCompra.html">Compras</a></li>
+                <li class="nav-item"><a class="nav-link" href="../abonos/Abonos.html">Abonos</a></li>
+              </ul>
+            </div>
+          </li>
+        
+          <li class="nav-item">
+            <a class="nav-link" data-bs-toggle="collapse" href="#produccion" aria-expanded="false" aria-controls="produccion">
+              <i class="menu-icon mdi mdi-chart-line"></i>
+              <span class="menu-title">Producción</span>
+              <i class="menu-arrow"></i>
+            </a>
+            <div class="collapse" id="produccion">
+              <ul class="nav flex-column sub-menu">
+                <li class="nav-item"><a class="nav-link" href="../empleado/listarEmpleado.html">Empleados</a></li>
+                <li class="nav-item"><a class="nav-link" href="../main/main.html">Producción</a></li>
+                <li class="nav-item"><a class="nav-link" href="../rendimiento/rendimiento.html">Rendimiento</a></li>
+                <li class="nav-item"><a class="nav-link" href="../jornadaLaboral/jornadaLaboral.html">Jornada Laboral</a></li>
+                <li class="nav-item"><a class="nav-link" href="../regProduccion/regProduccion.html">Reg. Producción</a></li>
+              </ul>
+            </div>
+          </li>
+        
+          <li class="nav-item">
+            <a class="nav-link" data-bs-toggle="collapse" href="#ventas" aria-expanded="false" aria-controls="ventas">
+              <i class="menu-icon mdi mdi-cash-register"></i>
+              <span class="menu-title">Ventas</span>
+              <i class="menu-arrow"></i>
+            </a>
+            <div class="collapse show" id="ventas">
+              <ul class="nav flex-column sub-menu active">
+                <li class="nav-item"><a class="nav-link" href="../cliente/listarCliente.html">Clientes</a></li>
+                <li class="nav-item active"><a class="nav-link" href="../Pedido/listarPedido.html">Pedidos</a></li>
+                <li class="nav-item"><a class="nav-link" href="../venta/listarVenta.html">Ventas</a></li>
+                <!--<li class="nav-item"><a class="nav-link" href="">Abonos</a></li>-->
+              </ul>
+            </div>
+          </li>
+        </ul>
+        
+        
+      </nav>
+      <!-- partial -->
+      <div class="main-panel">
+        <div class="content-wrapper">
+          <div class="container">
+            <div class="card">
+              <div class="card-body">
+                <form>
+                  <div class="row">
+                    <div class="col-sm-4">
+                      <div class="form-group  d-flex justify-content-between align-items-center">
+                        <label for="cliente" class="mt-2">Cliente</label>
+                        <div class="search-container">
+                          <input type="text" class="form-control" id="cliente">
+                          <span class="mdi mdi-magnify" id="buscarClienteCrearCliente"></span> 
+                          <a  class="col-sm-1" style="background-color: transparent;border:none;color:black" data-bs-toggle="modal"
+                          data-bs-target="#exampleModal1"><span class="mdi mdi-plus-circle"></span></a>                       
+                        </div>
+                      </div>                      
+                    </div>
+                           
+                    <div class="col-sm-4">
+                      <div class="form-group  d-flex justify-content-between align-items-center">
+                        <label for="contacto" class="mt-2">Contacto</label>
+                        <input type="text" class="form-control col-sm-9" id="contacto" readonly>
+                      </div>
+                    </div>
+                    
+                    <div class="col-sm-4">
+                      <div class="form-group d-flex justify-content-between align-items-center">
+                        <label for="ordenTrabajo" class="mt-2">Orden de Trabajo</label>
+                        <input type="number" class="form-control col-sm-6" id="ordenTrabajo" >
+                      </div>
+                    </div>                    
+                  </div>
+
+                  <div class="row" >
+                    <div class="form-group col-sm-4 d-flex justify-content-between align-items-center">
+                      <label for="fechaOrden" class="mt-2">Fecha de Orden</label>
+                      <input type="date" class="form-control col-sm-9" id="fechaOrden">
+                    </div>
+                    <div class="form-group col-sm-4 d-flex justify-content-between align-items-center">
+                      <label for="fechaCompromiso" class="mt-2">Fecha de Compromiso</label>
+                      <input type="date" class="form-control col-sm-9" id="fechaCompromiso">
+                    </div>
+                  </div>
+                </form>
+              </div>
+              <div class="card-body">
+                <form>
+                  <div class="row">
+                    <div class="form-group col-sm-4 d-flex justify-content-between align-items-center">
+                      <label for="referencia" class="mt-2">Referencia</label>
+                      <input type="text" class="form-control" id="referencia">
+                    </div>
+                    <div class="form-group col-sm-4 d-flex justify-content-between align-items-center">
+                      <label for="descripcion" class="mt-2">Descripción</label>
+                      <input type="text" class="form-control" id="descripcion">
+                    </div>
+                    <div class="form-group col-sm-4 d-flex justify-content-between align-items-center">
+                      <label for="" class="mt-2">Seleccione los procesos</label>
+                      <select id="procesos" class="form-select" multiple aria-label="multiple select example">
+                        <option value="plana" id="procesoPlana">Plana</option>
+                        <option value="recubridora" id="procesoRecubridora">Recubridora</option>
+                        <option value="fileteadora" id="procesoFileteadora">Fileteadora</option>
+                        <option value="presilladora" id="procesoPresilladora">Presilladora</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="form-group mt-1 col-sm-4 d-flex justify-content-between align-items-center">
+                      <label for="valorUnitario" class="">Valor Unitario</label>
+                      <input type="number" step="0.01" class="form-control" id="valorUnitario">
+                    </div>
+                    <div class="form-group col-sm-4 d-flex  align-items-center">
+                      <label for=""></label><br>
+                      <button type="button" style="background-color: transparent; border:none" id="agregarReferencia"><i class="mdi mdi-plus-circle" style="font-size: 25px;"></i></button>
+                    </div>
+                  </div>
+                </form>
+              </div>
+              <div class="card-body">
+                <div class="table-responsive">
+                  <table class="table table-bordered">
+                    <thead>
+                      <tr>
+                        <th>Referencia</th>
+                        <th>Descripción</th>
+                        <th>Procesos</th>
+                        <th>Valor Unitario</th>
+                        <th>Cantidad Total</th>
+                        <th>Valor Total</th>
+                        <th>Acciones</th>
+                      </tr>
+                    </thead>
+                    <tbody id="referenciasTableBody">
+                      <!-- Aquí se agregarán dinámicamente las filas de las referencias -->
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+              <div class="card-body">
+                <div class="row mt-4 justify-content-between">
+                  <div class="col-sm-4 d-flex justify-content-between align-items-center">
+                    <label  for="formaPago" class=" mt-2 small-font">Formas de Pago</label>
+                    <select class="form-select small-font" id="formaPago">
+                      <option selected>Selecciona forma de pago</option>
+                      <option value="contado">Contado</option>
+                      <option value="credito">Crédito</option>
+                    </select>
+                  </div>
+                  
+                  <div class="col-sm-3 d-flex justify-content-between align-items-center">
+                    <label for="valorPagar" class="mt-2"><strong >Total Neto</strong></label>
+                    <input class="form-control" id="valorPagar">
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+            <br><br>
+          </div>
+
+
+             <!-- Modal Formulario Crear -->
+             <div class="modal " id="exampleModal1" tabindex="-1" aria-labelledby="exampleModalLabel1" aria-hidden="true" style="top:-15%;">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel1">Crear Cliente</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body">
+                    <div class="card-body">
+                      <form action="">
+                        <div class="row">
+                          <div class="col-md-6">
+                            <label for="tipoCliente1">Tipo de Cliente</label><br>
+                            <select id="tipoCliente1" class="form-select form-control col-sm-12 ">
+                              <option value="Empresa">Empresa</option>
+                              <option value="Persona natural">Persona natural</option>
+                            </select>
+                            <div id="errorTipoCliente1"></div><br>
+                          </div>
+                          <div class="col-md-6">
+                            <label for="tipoIdentificacion1">Tipo de Documento</label><br>
+                            <select id="tipoIdentificacion1" class="form-select form-control col-sm-12 ">
+                              <option value="NIT">NIT</option>
+                              <option value="C.C">Cedula Ciudadania</option>
+                              <option value="C.E">Cedula Extranjera</option>
+                              <option value="T.E">Tarjeta Extranjera</option>
+                              <option value="T.I">Tarjeta de Identidad</option>
+                            </select>
+                            <div id="errorTipoIdentificacion1"></div><br>
+                          </div>
+                        </div>
+
+                        <div class="row ">
+                          <div class="col-md-6">
+                            <label for="">Numero de Identificación</label><br>
+                            <input type="number" class="form-control col-sm-12" id="numeroIdentificacion1"
+                              placeholder="0000000000">
+                            <div id="errorNumeroIdentificacion1"></div><br>
+                          </div>
+                          <div class="col-md-6">
+                            <label for="">Razon Social</label><br>
+                            <input type="text" class="form-control col-sm-12" id="razonSocial1"
+                              placeholder="Ejm: Los Oscaritos S.A.S">
+                            <div id="errorRazonSocial1"></div><br>
+                          </div>
+                        </div>
+
+                        <div class="row">
+                          <div class="col-md-6">
+                            <label for="">Nombre Comercial</label><br>
+                            <input type="text" class="form-control col-sm-12" id="nombreComercial1"
+                              placeholder="Ejm: Oscarito">
+                            <div id="errorNombreComercial1"></div><br>
+                          </div>
+                          <div class="col-md-6">
+                            <label for="">Ciudad</label><br>
+                            <input type="text" class="form-control col-sm-12" id="ciudad1"
+                              placeholder="Medellín, Bogota, Cali">
+                            <div id="errorCiudad1"></div><br>
+                          </div>
+                        </div>
+
+                        <div class="row">
+                          <div class="col-md-6">
+                            <label for="">Dirrección</label><br>
+                            <input type="text" class="form-control col-sm-12" id="direccion1"
+                              placeholder="Av 00 CL 00 00">
+                            <div id="errorDireccion1"></div><br>
+                          </div>
+                          <div class="col-md-6">
+                            <label for="">Contacto</label><br>
+                            <input type="text" class="form-control col-sm-12" id="contacto1"
+                              placeholder="Ejm: Juanito Contalo">
+                            <div id="errorContacto1"></div><br>
+                          </div>
+                        </div>
+
+                        <div class="row">
+                          <div class="col-md-6">
+                            <label for="">Télefono</label><br>
+                            <input type="text" class="form-control col-sm-12" id="telefono1" placeholder="0000000000">
+                            <div id="errorTelefono1"></div><br>
+                          </div>
+                          <div class="col-md-6">
+                            <label for="">Correo Electrónico</label><br>
+                            <input type="text" class="form-control col-sm-12" id="correo1"
+                              placeholder="Ejm: oscarito@gmail.com">
+                            <div id="errorCorreo1"></div><br>
+                          </div>
+                        </div>
+
+                        <div class="row">
+                          <div class="col-md-6">
+                            <label for="">Estado</label><br>
+                            <select id="estado1" class="form-select form-control col-sm-12 ">
+                              <option value="Activo">Activo</option>
+                              <option value="Inactivo">Inactivo</option>
+                            </select>
+                            <div id="errorEstado1"></div><br>
+                          </div>
+                        </div>
+                      </form>
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                        <button id="btnRegistrar" type="button" class="btn btn-primary">Guardar</button>
+                      </div>
+
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+
+              
+            <footer class="footer" style="position: fixed; bottom: 0; left: 0; right: 0; background-color: #f5f5f5; padding: 10px; text-align: center;">
+              <div class="">
+                <div style="margin: 0 auto;">
+                  <a type="button" href="listarPedido.html" class="btn btn-danger" style="margin-right: 10px; color:white">Cancelar</a>
+                  <a type="button" class="btn btn-success" style="background-color: rgb(92, 160, 92);color:white">Guardar</a>
+                </div>
+              </div>
+            </footer>
+           
+                       
+        </div>
+      </div>    
+  </div>
+  
+  
+
+  <script src="../../vendors/js/vendor.bundle.base.js"></script>
+  
+  <script src="../../vendors/bootstrap-datepicker/bootstrap-datepicker.min.js"></script>
+  <script src="../../js/off-canvas.js"></script>
+  <script src="../../js/hoverable-collapse.js"></script>
+  <script src="../../js/template.js"></script>
+  <script src="../../js/settings.js"></script>
+  <script src="../../js/todolist.js"></script>
+  <script src="../../js/pedido/crearPedido11.js"></script>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.14.0/js/bootstrap-select.min.js"></script>
+
+</body>
+
+</html>
+
